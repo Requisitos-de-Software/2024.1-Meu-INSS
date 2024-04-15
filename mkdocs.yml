@@ -24,9 +24,10 @@ nav:
     - Pré-Rastreabilidade: 
         - Rich Picture: "pre-rastreabilidade/rich_picture.md"
     - Elicitação:
+        - Perfil de Usuário: "elicitacao/perfil_de_Usuario.md"
         - Personas: "elicitacao/personas.md"
         - Brainstorm: "elicitacao/brainStorm.md"
-        - Entrevista: "elicitacao/entrevista.md"
+        - Entrevisa: "elicitacao/entrevista.md"
 
     
 theme:

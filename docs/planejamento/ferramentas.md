@@ -27,6 +27,7 @@ Nesta seção, destacamos a seleção de ferramentas realizada pelo nosso grupo 
 
 ## Referências Bibliográficas
 
+<<<<<<< HEAD
 > <a id="QT1" href="#anchor_1">1.</a> GitHub. Disponível em: https://github.com. Acesso em: 28 de mar. 2024.
 
 > <a id="QT2" href="#anchor_2">2.</a> Microsoft Teams. Disponível em: https://teams.microsoft.com. Acesso em: 28 de mar. 2024.
@@ -56,6 +57,37 @@ Nesta seção, destacamos a seleção de ferramentas realizada pelo nosso grupo 
 > <a id="QT14" href="#anchor_14">14.</a> Lucidchart. Disponível em: https://www.lucidchart.com/pages/pt. Acesso em: 09 de abr. 2024.
 
 > <a id="QT15" href="#anchor_15">15.</a> This Person Doesn't Exist. Disponível em: https://this-person-does-not-exist.com/pt. Acesso em: 09 de abr. 2024.
+=======
+> <a id="RP1" href="#TEC1">[1]</a> GitHub. Disponível em: [https://github.com](https://github.com). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC2" href="#RP2">[2]</a> Microsoft Teams. Disponível em: [https://teams.microsoft.com](https://teams.microsoft.com). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC3" href="#RP3">[3]</a> WhatsApp. Disponível em: [https://www.whatsapp.com/?lang=pt_BR](https://www.whatsapp.com/?lang=pt_BR). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC4" href="#RP4">[4]</a> Discord. Disponível em: [https://discord.com/pt_BR](https://discord.com/pt_BR). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC5" href="#RP5">[5]</a> Discord. Disponível em: [https://www.mkdocs.org/](https://www.mkdocs.org/). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC6" href="#RP6">[6]</a> Visual Studio Code. Disponível em: [https://code.visualstudio.com/](https://code.visualstudio.com/). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC7" href="#RP7">[7]</a> Trello. Disponível em: [https://trello.com/pt-BR](https://trello.com/pt-BR). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC8" href="#RP8">[8]</a> Youtube. Disponível em: [https://www.youtube.com/](https://www.youtube.com/). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC9" href="#RP9">[9]</a> Figma. Disponível em: [https://www.figma.com/](https://www.figma.com/). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC10" href="#RP10">[10]</a> Drawio. Disponível em: [https://app.diagrams.net/](https://app.diagrams.net/). Acesso em: 28 de mar. 2024.
+
+> <a id="TEC11" href="#RP11">[11]</a> Canva. Disponível em: [https://www.canva.com/](https://www.canva.com/). Acesso em: 31 de mar. 2024.
+
+> <a id="TEC12" href="#RP12">[12]</a> Google Forms. Disponível em: [https://www.google.com/intl/pt-BR/forms/about/](https://www.google.com/intl/pt-BR/forms/about/). Acesso em: 09 de abr. 2024.
+
+> <a id="TEC13" href="#RP13">[13]</a> Google Planilhas. Disponível em: [https://www.google.com/intl/pt-BR/sheets/about/](https://www.google.com/intl/pt-BR/sheets/about/). Acesso em: 09 de abr. 2024.
+
+> <a id="TEC14" href="#RP14">[14]</a> Lucidchart. Disponível em: [https://www.lucidchart.com/pages/pt](https://www.lucidchart.com/pages/pt). Acesso em: 09 de abr. 2024.
+
+> <a id="TEC15" href="#RP15">[15]</a> This Person Doesn't Exist. Disponível em: [https://this-person-does-not-exist.com/pt](https://this-person-does-not-exist.com/pt). Acesso em: 09 de abr. 2024.
+>>>>>>> main
 
 
 ## Histórico de Versão

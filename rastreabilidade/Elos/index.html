@@ -1,0 +1,5685 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/rastreabilidade/Elos/">
+      
+      
+        <link rel="prev" href="../../verificacao/validacao/verificaInformal/">
+      
+      
+        <link rel="next" href="../matriz/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Elos - Meu INSS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#elos" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Meu INSS" class="md-header__button md-logo" aria-label="Meu INSS" data-md-component="logo">
+      
+  <img src="../../imagens/inss-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Meu INSS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Elos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0 9.821 9.821 0 0 0-17.64 0Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1-Meu-INSS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../apresentacao/apresentacao01/" class="md-tabs__link">
+          
+  
+  Apresentação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../atas/Ata1-24.03.2024/" class="md-tabs__link">
+          
+  
+  Atas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../planejamento/tap/" class="md-tabs__link">
+          
+  
+  Planejamento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../pre-rastreabilidade/rich_picture/" class="md-tabs__link">
+          
+  
+  Pré-Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../elicitacao/perfil_de_Usuario/" class="md-tabs__link">
+          
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../modelagem/specSuplementar/" class="md-tabs__link">
+          
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../verificacao/preparacao/RichPicture/" class="md-tabs__link">
+          
+  
+  Verificação e Validação
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../entregafinal/App_select/" class="md-tabs__link">
+          
+  
+  Entrega Final
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Meu INSS" class="md-nav__button md-logo" aria-label="Meu INSS" data-md-component="logo">
+      
+  <img src="../../imagens/inss-logo.png" alt="logo">
+
+    </a>
+    Meu INSS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1-Meu-INSS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Apresentação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacao/apresentacao01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacao/apresentacao02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacao/apresentacao03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacao/apresentacao04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacao/apresentacao05.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 5.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacao/apresentacao06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacao/apresentacao05.2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 5.2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apresentacao/apresentacao07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Atas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/Ata1-24.03.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/Ata2-31.03.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/Ata3-07.04.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 03
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/Ata4-05.05.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 04
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/Ata5-02.06.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 05
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Planejamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/tap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Abertura de Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/EAP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma_planejado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cronograma Planejado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/cronograma_executado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cronograma Executado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/heatmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Heatmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/aplicativo_avaliados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aplicativo escolhido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/copia_termo_de_uso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termos de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ferramentas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../planejamento/metodologia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pré-Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich Picture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Elicitação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/perfil_de_Usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perfil de Usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/personas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Técnicas de Elicitação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas de Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/brainStorm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/Introspeccao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introspecção
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrevista
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/questionario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Questionário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/storytelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storytelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Técnicas de Priorização
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas de Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/Prioriza%C3%A7%C3%A3o/threelevelscale/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three level scale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/Prioriza%C3%A7%C3%A3o/100%24/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    100$
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/Prioriza%C3%A7%C3%A3o/first_things/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Things First
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elicitacao/requisitosElicitados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Modelagem
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/specSuplementar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/useCase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/validusecase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação dos casos de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/cenarios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/lexicos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ágil
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/Agil/backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/Agil/historia_de_usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelagem/Agil/nfr2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NFR Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Verificação e Validação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação e Validação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Preparação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Preparação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/RichPicture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich Picture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/PerfildeUsuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perfil de Usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Persona/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Brainstorm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Entrevista/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrevista
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Introspeccao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introspecção
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Questionario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Questionário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/AnalisedeDoc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Análise de documentação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Storytteling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storytelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/FirstThings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Things First
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/100dol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    100$
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/InOrOut/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    In or Out
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/CasosDeUsos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagrama de casos de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/EspecSuplementar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Lexicos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Cenarios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/HistoriasdeUser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/NFR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NFR Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/ThreeLevelScale/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three Level Scale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Matriz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matriz de rastreabilidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/preparacao/Elos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Inspeções
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Inspeções
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_1" id="__nav_8_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Grupo 8 - Consumidor.gov
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo 8 - Consumidor.gov
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo8/entrega1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo8/entrega2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo8/entrega3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo8/entrega4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2" id="__nav_8_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Grupo 7 - MeuINSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo 7 - MeuINSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo7/entrega1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo7/entrega2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo7/entrega3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo7/entrega4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/inspecoes/grupo7/entrega5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Validação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Validação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/validacao/prototipo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prototipação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../verificacao/validacao/verificaInformal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comprovação Informal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Elos
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Elos
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backward-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backward-from
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forward-from
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cartoes-de-relacionamento-dos-elos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Relacionamento dos Elos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re01" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE01
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re02" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE02
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re03" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE03
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re04" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE04
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re05" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE05
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re06" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE06
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re07" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE07
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re08" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE08
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re09" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE09
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE12
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE13
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE16
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE17
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re18" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE18
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re19" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE19
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re20" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re21" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE21
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re22" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE22
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re23" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE23
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re24" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE24
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re25" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE25
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re26" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE26
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re27" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE27
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re28" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE28
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re29" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE29
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re30" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE30
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re31" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE31
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re32" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE32
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re33" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE33
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re34" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE34
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re35" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE35
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re36" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE36
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re37" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE37
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re38" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE38
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re39" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE39
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re40" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE40
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re41" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE41
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../matriz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matriz de Rastreabilidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Entrega Final
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega Final
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/App_select/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aplicativo Selecionado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/Planejamento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planejamento dos Recursos e das Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/Exec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Execução do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/Resultados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resultados Alcançados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/Tecnicas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Técnicas Utilizadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/Artefatos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Artefatos Criados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/V%26V/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Método de Verificação e Validação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/Ferramentas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ferramentas Utilizadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../entregafinal/Apresentacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introdução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backward-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backward-from
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forward-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forward-from
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metodologia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cartoes-de-relacionamento-dos-elos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartões de Relacionamento dos Elos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re01" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE01
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re02" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE02
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re03" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE03
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re04" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE04
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re05" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE05
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re06" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE06
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re07" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE07
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re08" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE08
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re09" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE09
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re10" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re11" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re12" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE12
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re13" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE13
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re14" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE14
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re15" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE15
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re16" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE16
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re17" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE17
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re18" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE18
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re19" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE19
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re20" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE20
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re21" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE21
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re22" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE22
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re23" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE23
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re24" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE24
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re25" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE25
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re26" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE26
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re27" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE27
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re28" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE28
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re29" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE29
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re30" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE30
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re31" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE31
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re32" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE32
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re33" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE33
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re34" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE34
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re35" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE35
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re36" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE36
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re37" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE37
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re38" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE38
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re39" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE39
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re40" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE40
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re41" class="md-nav__link">
+    <span class="md-ellipsis">
+      RE41
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referências Bibliográficas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="elos">Elos</h1>
+<h2 id="introducao">Introdução</h2>
+<p>Os elos de rastreabilidade são conexões essenciais que estabelecem vínculos entre diferentes artefatos e atividades ao longo do ciclo de vida de um projeto ou sistema. Esses elos permitem rastrear a origem e a evolução de funcionalidades, decisões de projeto e mudanças, garantindo um gerenciamento eficaz e uma qualidade consistente. Utilizando a rastreabilidade, é possível identificar a proveniência de cada funcionalidade do sistema, assegurar que todos os requisitos foram devidamente testados e validados, registrar decisões críticas para o projeto e gerenciar os riscos de maneira eficiente. Além disso, a rastreabilidade facilita o controle de mudanças ao indicar quais artefatos são impactados por alterações específicas, promovendo uma gestão integrada e transparente do desenvolvimento e manutenção de sistemas.<a id="RP1" href="#TEC1">[1]</a> </p>
+<h3 id="backward-from">Backward-from</h3>
+<p>A rastreabilidade backward-from é um processo crítico na engenharia de requisitos, que permite a ligação dos requisitos às suas fontes originais. Esse tipo de rastreabilidade é essencial para garantir que todos os requisitos identificados tenham uma origem bem definida, facilitando a validação e verificação durante o ciclo de vida do desenvolvimento do software. Além disso, a rastreabilidade backward-from ajuda a gerenciar mudanças ao rastrear de volta cada requisito até suas bases, assegurando que qualquer modificação no sistema possa ser rapidamente associada à sua origem, permitindo uma resposta eficaz a alterações e garantindo a conformidade com os requisitos iniciais do projeto.<a id="RP1" href="#TEC1">[1]</a> </p>
+<h3 id="forward-from">Forward-from</h3>
+<p>A rastreabilidade forward-from é um componente essencial na engenharia de requisitos, que possibilita a ligação dos requisitos aos artefatos subsequentes, como design, código, testes e documentação. Esse tipo de rastreabilidade é crucial para assegurar que todos os requisitos sejam devidamente implementados e testados ao longo do ciclo de vida do desenvolvimento do software. Além disso, a rastreabilidade forward-to facilita a gestão de mudanças, permitindo que qualquer alteração nos requisitos seja refletida de maneira consistente em todos os artefatos afetados. Isso garante que as modificações sejam corretamente incorporadas e verificadas, mantendo a integridade e a conformidade do sistema em relação aos requisitos definidos inicialmente. <a id="RP2" href="#TEC2">[2]</a></p>
+<h2 id="metodologia">Metodologia</h2>
+<p>Utilizamos um cartão baseado nos cartões presentes nos slides dos Professores Milene Serrano e Maurício Serrano na página 22 à 27<a id="RP3" href="#TEC3">[3]</a>, as categorias e tipos de elos derivam do Meta-modelo de Toranzo. Os cartões que fizemos utilizam o mesmo formato, porém fizemos baseados nos requisitos onde cada cartão possui todos os tipos de Elos daquele requisito citado.</p>
+<h3 id="cartoes-de-relacionamento-dos-elos">Cartões de Relacionamento dos Elos</h3>
+<div align="center">
+  <strong>Tabela 1 -</strong> Exemplo de cartão
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td><strong>Categoria:</strong></td>
+      <td>Desenvolvimento</td>
+    </tr>
+    <tr>
+      <td><strong>Elementos:</strong></td>
+      <td>RE01, UC01, CE01, ENT01</td>
+    </tr>
+    <tr>
+      <td><strong>Elos Backward-from:</strong></td>
+      <td>Agregação: RE01 - ENT01: O requisito originou-se da entrevista.</td>
+    </tr>
+    <tr>
+      <td><strong>Elos Forward-from:</strong></td>
+      <td>
+        Satisfação: RE01 - CS01: O requisito deu origem ao caso de uso.<br>
+        Satisfação: RE01 - CE01: O requisito deu origem ao cenário.
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p><font size="3"><p style="text-align: center">Autores: <a href="https://github.com/acamposs">Amanda Campos</a>, <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>, <a href="https://github.com/GabrielMS00">Gabriel Souza</a>, <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>, <a href="https://github.com/JoseFilipi">José Souza</a>, <a href="https://github.com/paulohborba">Paulo Borba</a>, <a href="https://github.com/vitorfleonardo">Vitor Leonardo</a>.</p></font></p>
+<p>Legenda:</p>
+<ul>
+<li><strong>Categoria</strong>: Devem ser classificadas em quatro níveis<ul>
+<li><strong>Ambiental</strong>: Congrega informações oriundas do contexto ambiental onde a organização está inserida e que podem afetar o sistema sendo desenvolvido.</li>
+<li><strong>Organizacional</strong>: Reúne informações relacionadas à organização (missão, objetivos, metas e padrões) e que podem impactar os requisitos do sistema.</li>
+<li><strong>Gerencial</strong>: Agrega informações que permitem associar tarefas a requisitos, e que podem auxiliar a gerência do projeto.</li>
+<li><strong>Desenvolvimento</strong>: Abarca informações relacionadas aos diversos artefatos gerados no processo de desenvolvimento (documento de requisitos, diagramas, programas, casos de testes, ...).</li>
+</ul>
+</li>
+<li><strong>Elementos</strong>: Lista de identificadores que representam <a href="../../elicitacao/requisitosElicitados">requisitos</a> (RE01), <a href="../../modelagem/useCase">casos de uso</a> (US01), <a href="../../modelagem/cenarios">cenários</a> (CEN01) e <a href="../../elicitacao/brainStorm">técnicas de elicitação de requisitos</a> (ENT01).</li>
+<li><strong>Elos Backward-from</strong>: Primeiro, mostra-se o tipo de elo e depois a origem do requisito. Por exemplo, o requisito REQ01 originou-se da entrevista ENT01.</li>
+<li><strong>Elos Forward-from</strong>: Primeiro, mostra-se o tipo de elo e como o requisito é satisfeito ou relacionado a outros elementos. Por exemplo, o requisito RE01 deu origem ao caso de uso CS01 e ao cenário CE01.</li>
+<li><strong>Tipos de Elos</strong>:<ul>
+<li><strong>Satisfação</strong>: Indica que a classe de origem tem dependência de satisfação com a classe de destino.</li>
+<li><strong>Recurso</strong>: Indica que a classe de origem tem dependência de recurso com a classe de destino.</li>
+<li><strong>Responsabilidade</strong>: Registra a participação, responsabilidade e ação de pessoas sobre artefatos.</li>
+<li><strong>Representação</strong>: Captura a representação ou modelagem dos requisitos em outras linguagens.</li>
+<li><strong>Alocado</strong>: Classe de origem está relacionada à classe de destino, que representa um subsistema.</li>
+<li><strong>Agregação</strong>: Indica composição de elementos.</li>
+</ul>
+</li>
+</ul>
+<h3 id="re01">RE01</h3>
+<div align="center">
+  <strong>Tabela 2 -</strong> Cartão do Requisito 01 - C01
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE01</a>, <a href="../../elicitacao/brainStorm">BS01</a>, <a href="../../elicitacao/storytelling">ST02</a>, <a href="../../elicitacao/questionario">QT01</a>, <a href="../../modelagem/useCase">UC01</a>, <a href="../../modelagem/cenarios">CEN01</a>, <a href="../../modelagem/Agil/historia_de_usuario">US01</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve realizar o login com o acesso unificado do gov.br.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;">Agregação: RE01 - BS01, ST02, QT01: O requisito originou-se de um Brainstorm, storytelling e de um questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE01 - UC01: O caso de uso (UC01) satisfaz o requisito (RE01) ao descrever o processo de login unificado pelo gov.br. <br> Recurso: RE01 - CEN01: O cenário detalha os recursos necessários para que o usuário realize o login unificado pelo gov.br, conforme requerido pelo RE01. <br> <strong>Satisfação</strong>: RE01 - US01: A história de usuário (US01) satisfaz o requisito (RE01) ao especificar a necessidade de login seguro e integrado pelo gov.br. <br> <strong>Representação</strong>: <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/main/docs/imagens/prints/RE01.jpeg">Print do Requisito Funcional que já está Implementado no aplicativo</a>.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>, 2024.</p>
+
+<h3 id="re02">RE02</h3>
+<div align="center">
+  <strong>Tabela 3 -</strong> Cartão do Requisito 02 - C02
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE02</a>, <a href="../../elicitacao/brainStorm">BS02</a>, <a href="../../modelagem/useCase">UC01</a>, <a href="../../modelagem/cenarios">CEN01</a>, <a href="../../modelagem/Agil/historia_de_usuario">US02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve receber um termo de uso em seu primeiro acesso.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE02 - BS02: O requisito originou-se do Brainstorm.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE02 - UC01: O caso de uso (UC01) inclui um fluxo alternativo que exige que o usuário aceite os termos de uso no primeiro acesso, satisfazendo o requisito (RE02). <br> <strong>Recurso</strong>: RE02 - CEN01: O cenário (CEN01) detalha os recursos necessários para o usuário acessar o aplicativo e receber o termo de uso no primeiro acesso, conforme requerido pelo RE02. <br> <strong>Satisfação</strong>: RE02 - US02:  história de usuário (US02) satisfaz o requisito (RE02) ao especificar que o usuário deve receber e aceitar o termo de uso no primeiro acesso.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>, 2024.</p>
+
+<h3 id="re03">RE03</h3>
+<div align="center">
+  <strong>Tabela 4 -</strong> Cartão do Requisito 03 - C03
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE03</a>, <a href="../../elicitacao/brainStorm">BS03</a>, <a href="../../modelagem/useCase">UC03</a>, <a href="../../modelagem/cenarios">CEN02</a>, <a href="../../modelagem/Agil/historia_de_usuario">US03</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve ter acesso a documentos legislativos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE03 - BS03: O requisito originou-se do Brainstorm.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE03 - UC03: O caso de uso (UC03) satisfaz o requisito (RE03) ao permitir que o usuário visualize documentos legislativos no sistema. <br> <strong>Agregação</strong>: RE03 - CEN02: O cenário (CEN02) detalha um processo diferente, mas os recursos descritos podem ser parte de uma agregação para acessar várias funcionalidades do sistema, incluindo documentos legislativos. <br> <strong>Satisfação</strong>: RE03 - US03: A história de usuário (US03) satisfaz o requisito (RE03) ao descrever a necessidade de acesso a documentos legislativos para acompanhar a legislação vigente.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>, 2024.</p>
+
+<h3 id="re04">RE04</h3>
+<div align="center">
+  <strong>Tabela 5 -</strong> Cartão do Requisito 04 - C04
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE04</a>, <a href="../../elicitacao/brainStorm">BS04</a>, <a href="../../elicitacao/brainStorm">BS13</a>, <a href="../../elicitacao/entrevista">ENT05</a>, <a href="../../elicitacao/storytelling">ST08</a>, <a href="../../elicitacao/questionario">QT08</a>, <a href="../../modelagem/useCase">UC04</a>, <a href="../../modelagem/cenarios">CEN03</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve fornecer um serviço de suporte técnico acessível diretamente no aplicativo ou por meio de um número 0800 ou chat de atendimento.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE04 - BS04, BS13: O requisito originou-se de um Brainstorm. <br> <strong>Agregação</strong>: RE04 - ENT05: O requisito origino-se de uma Entrevista. <br> <strong>Agregação</strong>: RE04 - ST08 O requisito origino-se de um Storytelling. <br> <strong>Agregação</strong>: RE04 - QT08: O requisito origino-se de um Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE04 - UC04: O requisito RE04 deu origem ao caso de uso UC04. <br> <strong>Satisfação</strong>: RE03 - CEN03: O requisito RE04 contribui para o cenário CEN03. <br> <strong>Satisfação</strong>: RE04 - CDS: O requisito recebeu uma pontuação $8 do Desenvolvedor e $10 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE04 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>, 2024.</p>
+
+<h3 id="re05">RE05</h3>
+<div align="center">
+  <strong>Tabela 6 -</strong> Cartão do Requisito 05 - C05
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE05</a>, <a href="../../elicitacao/brainStorm">BS05</a>, <a href="../../elicitacao/questionario">QT08</a>, <a href="../../modelagem/cenarios">CEN03</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve conseguir acessar tutoriais para a compreensão e melhor uso do aplicativo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE05 - BS05: O requisito originou-se de um Brainstorm. <br> <strong>Agregação</strong>: RE05 - QT08: O requisito origino-se de um Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE05 - UCN03: O requisito RE05 contribui para o cenário CEN03. <br> <strong>Satisfação</strong>: RE05 - CDS: O requisito recebeu uma pontuação $9 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE05 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>, 2024.</p>
+
+<h3 id="re06">RE06</h3>
+<div align="center">
+  <strong>Tabela 7 -</strong> Cartão do Requisito 06 - C06
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE06</a>, <a href="../../elicitacao/brainStorm">BS06</a>, <a href="../../modelagem/useCase">UC04</a>, <a href="../../modelagem/cenarios">CEN07</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve ser capaz de agendar um horário em uma agência</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE06 - BS06: O requisito originou-se de um Brainstorm.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE06 - UC04: O requisito RE06 deu origem ao caso de uso UC04. <br> <strong>Satisfação</strong>: RE06 - CEN07: O requisito RE06 contribui para o cenário CEN07. <br> <strong>Satisfação</strong>: RE06 - CDS: O requisito recebeu uma pontuação $3 do Desenvolvedor e $3 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE06 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>, 2024.</p>
+
+<h3 id="re07">RE07</h3>
+<div align="center">
+  <strong>Tabela 8 -</strong> Cartão do Requisito 07 - C07
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE07</a>, <a href="../../elicitacao/brainStorm">BS07</a>, <a href="../../elicitacao/brainStorm">BS11</a>, <a href="../../elicitacao/Introspeccao">IT02</a>, <a href="../../elicitacao/Introspeccao">IT05</a>, <a href="../../elicitacao/storytelling">ST01</a>, <a href="../../elicitacao/storytelling">ST07</a>, <a href="../../elicitacao/entrevista">ENT10</a>, <a href="../../elicitacao/questionario">QT02</a>, <a href="../../elicitacao/questionario">QT05</a>, <a href="../../modelagem/cenarios">CEN02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder visualizar detalhes de todos os benefícios aos quais tem direito, incluindo valores, datas de pagamento, status e correções.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE07 - BS07, BS11: O requisito originou-se de um Brainstorm. <br> <strong>Agregação</strong>: RE07 - IT02, IT05 O requisito origino-se de uma Introspecção. <br> <strong>Agregação</strong>: RE07 - ST01, ST07 O requisito origino-se de um Storytelling. <br> <strong>Agregação</strong>: RE07 - ENT10: O requisito origino-se de uma Entrevista. <br> <strong>Agregação</strong>: RE07 - QT02, QT05: O requisito origino-se de um Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE07 - CEN02: O requisito RE07 contribui para o cenário CEN02. <br> <strong>Satisfação</strong>: RE07 - CDS: O requisito recebeu uma pontuação $8 do Desenvolvedor e $12 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE07 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> <strong>Representação</strong>: <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/main/docs/imagens/prints/RE07.jpeg">Print do Requisito Funcional que já está Implementado no aplicativo</a>.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>, 2024.</p>
+
+<h3 id="re08">RE08</h3>
+<div align="center">
+  <strong>Tabela 9 -</strong> Cartão do Requisito 08 - C08
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE08</a>, <a href="../../elicitacao/brainStorm">BS08</a>, <a href="../../elicitacao/brainStorm">BS12</a>, <a href="../../elicitacao/Introspeccao">IT06</a>, <a href="../../elicitacao/entrevista">ENT07</a>, <a href="../../elicitacao/storytelling">ST20</a>, <a href="../../elicitacao/questionario">QT02</a>, <a href="../../elicitacao/questionario">QT03</a>, <a href="../../modelagem/useCase">UC07</a>, <a href="../../modelagem/useCase">UC11</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder acessar uma funcionalidade para simular o tempo de contribuição e estimar a aposentadoria e seus benefícios com base nos seus dados.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE08 - BS08, BS12: O requisito originou-se de um Brainstorm. <br> <strong>Agregação</strong>: RE08 - IT06 O requisito origino-se de uma Introspecção. <br> <strong>Agregação</strong>: RE08 - ENT07: O requisito origino-se de uma Entrevista. <br> <strong>Agregação</strong>: RE08 - ST20: O requisito origino-se de um Storytelling. <br> <strong>Agregação</strong>: RE08 - QT02, QT03: O requisito origino-se de um Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE08 - UC08, UC11: O requisito RE08 deu origem aos casos de uso UC08 e UC11. <br> <strong>Satisfação</strong>: RE08 - CDS: O requisito recebeu uma pontuação $9 do Desenvolvedor e $20 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE08 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>, 2024.</p>
+
+<h3 id="re09">RE09</h3>
+<div align="center">
+  <strong>Tabela 10 -</strong> Cartão do Requisito 09 - C09
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE09</a>, <a href="../../elicitacao/brainStorm">BS09</a>, <a href="../../elicitacao/entrevista">ENT11</a>, <a href="../../elicitacao/entrevista">ENT08</a>, <a href="../../elicitacao/questionario">QT02</a>, <a href="../../modelagem/useCase">UC08</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve ser capaz de checar o extrato referente ao dinheiro da aposentadoria mensal.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE09 - BS09: O requisito originou-se de um Brainstorm. <br> <strong>Agregação</strong>: RE09 - ENT11, ENT08: O requisito origino-se de uma Entrevista <br> <strong>Agregação</strong>: RE09 - QT02: O requisito origino-se de um Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE09 - UC08: O requisito RE09 deu origem ao caso de uso UC08. <br> <strong>Satisfação</strong>: RE09 - CDS: O requisito recebeu uma pontuação $2 do Desenvolvedor e $5 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE09 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>, 2024.</p>
+
+<h3 id="re10">RE10</h3>
+<div align="center">
+  <strong>Tabela 11 -</strong> Cartão do Requisito 10 - C10
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE10</a>, <a href="../../elicitacao/entrevista">ENT14</a>, <a href="../../modelagem/useCase">UC08</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve ser capaz de acessar um extrato anual de imposto de renda.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE10 - ENT14: O requisito originou-se de uma Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE10 - UC08: O requisito RE10 deu origem ao caso de uso UC08. <br> <strong>Satisfação</strong>: RE10 - CDS: O requisito recebeu uma pontuação $2 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE10 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>, 2024.</p>
+
+<h3 id="re11">RE11</h3>
+<div align="center">
+  <strong>Tabela 12 -</strong> Cartão do Requisito 11 - C11
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE11</a>, <a href="../../elicitacao/entrevista">ENT15</a>, <a href="../../modelagem/useCase">UC08</a>, <a href="../../modelagem/useCase">UC10</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve ser capaz de acessar um extrato anual de empréstimo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE11 - ENT15: O requisito originou-se de uma Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE11 - UC08, UC10: O requisito RE11 deu origem aos casos de uso UC08 e UC10. <br> <strong>Satisfação</strong>: RE11 - CDS: O requisito recebeu uma pontuação $2 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE11 - TLS: O requisito recebeu uma priorização Média no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>, 2024.</p>
+
+<h3 id="re12">RE12</h3>
+<div align="center">
+  <strong>Tabela 13 -</strong> Cartão do Requisito 12 - C12
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE12</a>, <a href="../../elicitacao/brainStorm">BS10</a>, <a href="../../elicitacao/questionario">QT01</a>, <a href="../../modelagem/cenarios">CEN01</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir o acesso dos usuários através de autenticação biométrica, como impressão digital.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE12 - BS10: O requisito originou-se de um Brainstorm. <br> <strong>Agregação</strong>: RE12 - QT01: O requisito origino-se de um Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE12 - CEN01: O requisito RE12 contribui para o cenário CEN01. <br> <strong>Satisfação</strong>: RE12 - CDS: O requisito recebeu uma pontuação $8 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE12 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>, 2024.</p>
+
+<h3 id="re13">RE13</h3>
+<div align="center">
+  <strong>Tabela 14 -</strong> Cartão do Requisito 13 - C13
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE13</a>, <a href="../../elicitacao/entrevista">ENT01</a>, <a href="../../modelagem/useCase">UC09</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir que os usuários acessem e visualizem o Cadastro Nacional de Informações Sociais (CNIS).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE13 - ENT01: O requisito originou-se de uma Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE13 - UC09: O requisito RE13 deu origem ao caso de uso UC09. <br> <strong>Satisfação</strong>: RE13 - CDS: O requisito recebeu uma pontuação $7 do Desenvolvedor e $10 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE13 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> <strong>Representação</strong>: <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/main/docs/imagens/prints/RE13.jpeg">Print do Requisito Funcional que já está Implementado no aplicativo</a>.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>, 2024.</p>
+
+<h3 id="re14">RE14</h3>
+<div align="center">
+  <strong>Tabela 15 -</strong> Cartão do Requisito 14 - C14
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE14</a>, <a href="../../elicitacao/entrevista">ENT02</a>, <a href="../../modelagem/useCase">UC07</a>, <a href="../../modelagem/cenarios">CEN02</a>, <a href="../../modelagem/cenarios">CEN04</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Deve fornecer ferramentas voltadas para os benefícios dos segurados, incluindo um recurso de pesquisa.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE14 - ENT02: O requisito originou-se de uma Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE14 - UC07: O requisito RE14 deu origem ao caso de uso UC07. <br> <strong>Satisfação</strong>: RE14 - CEN02, CEN04: O requisito RE14 contribui para os cenários CEN02 e CEN04. <br> <strong>Satisfação</strong>: RE14 - CDS: O requisito recebeu uma pontuação 9 do Desenvolvedor e 5 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE14 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> Representação: <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/main/docs/imagens/prints/RE14.jpeg">Print do Requisito Funcional que já está Implementado no aplicativo</a>.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>, 2024.</p>
+
+<h3 id="re15">RE15</h3>
+<div align="center">
+  <strong>Tabela 16 -</strong> Cartão do Requisito 15 - C15
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE15</a>, <a href="../../elicitacao/entrevista">ENT03</a>, <a href="../../modelagem/useCase">UC06</a>, <a href="../../modelagem/useCase">UC07</a>, <a href="../../modelagem/useCase">UC09</a>, <a href="../../modelagem/cenarios">CEN04</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Deve permitir o requerimento de benefícios e a atualização do vínculo do CNIS do segurado.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE15 - ENT03: O requisito originou-se de uma Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE15 - UC06, UC07, UC09: O requisito RE15 deu origem aos casos de uso UC06, UC07, UC09. <br> <strong>Satisfação</strong>: RE15 - CEN04: O requisito RE15 contribui para o cenário CEN04. <br> <strong>Satisfação</strong>: RE15 - CDS: O requisito recebeu uma pontuação $6 do Desenvolvedor e $4 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE15 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> <strong>Representação</strong>: <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/main/docs/imagens/prints/RE15.jpeg">Print do Requisito Funcional que já está Implementado no aplicativo</a>.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>, 2024.</p>
+
+<h3 id="re16">RE16</h3>
+<div align="center">
+  <strong>Tabela 17 -</strong> Cartão do Requisito 16 - C16
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE16</a>, <a href="../../elicitacao/entrevista">ENT04</a>, <a href="../../elicitacao/entrevista">ENT08</a>, <a href="../../modelagem/cenarios">CEN02</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Deve fornecer informações sobre pagamentos não recebidos devido a erros e descontos indevidos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE16 - ENT04, ENT08: O requisito originou-se de uma Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE16 - CEN02: O requisito RE16 contribui para o cenário CEN02. <br> <strong>Satisfação</strong>: RE16 - CDS: O requisito recebeu uma pontuação $6 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE16 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>, 2024.</p>
+
+<h3 id="re17">RE17</h3>
+<div align="center">
+  <strong>Tabela 18 -</strong> Cartão do Requisito 17 - C17
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE17</a>, <a href="../../elicitacao/entrevista">ENT06</a>, <a href="../../elicitacao/Introspeccao">IT07</a>, <a href="../../modelagem/useCase">UC02</a>, <a href="../../modelagem/cenarios">CEN05</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder atualizar seus dados pessoais, como endereço, telefone, email e localidade.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE17 - ENT06: O requisito originou-se de uma Entrevista. <br> <strong>Agregação</strong>: RE17 - IT07: O requisito origino-se de uma Introspecção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE17 - UC02: O requisito RE17 deu origem ao caso de uso UC02. <br> <strong>Satisfação</strong>: RE17 - CEN05: O requisito RE17 contribui para o cenário CEN05. <br> <strong>Satisfação</strong>: RE17 - CDS: O requisito recebeu uma pontuação $9 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE17 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> <strong>Representação</strong>: <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/main/docs/imagens/prints/RE17.jpeg">Print do Requisito Funcional que já está Implementado no aplicativo</a>.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>, 2024.</p>
+
+<h3 id="re18">RE18</h3>
+<div align="center">
+  <strong>Tabela 19 -</strong> Cartão do Requisito 18 - C18
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE18</a>, <a href="../../elicitacao/entrevista">ENT12</a>, <a href="../../modelagem/useCase">UC10</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve ser alertado sobre empréstimos indevidos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE18 - ENT12: O requisito originou-se de uma Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE18 - UC10: O requisito RE18 deu origem ao caso de uso UC10. <br> <strong>Satisfação</strong>: RE18 - CDS: O requisito recebeu uma pontuação $2 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE18 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>, 2024.</p>
+
+<h3 id="re19">RE19</h3>
+<div align="center">
+  <strong>Tabela 20 -</strong> Cartão do Requisito 19 - C19
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE19</a>, <a href="../../elicitacao/entrevista">ENT13</a>, <a href="../../modelagem/useCase">UC10</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/Agil/historia_de_usuario">US19</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve poder bloquear empréstimos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE19 - ENT13: O requisito originou-se de uma Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE19 - UC10: O requisito RE19 está no conjunto que deu origem ao caso de uso UC10. <br> <strong>Satisfação</strong>: RE19 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> <strong>Satisfação</strong>: RE19 - CDS: O requisito recebeu um valor de $4 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE19 - FTF: O requisito recebeu uma pontuação de 1,69 no First Things First. <br> <strong>Agregação</strong>: RE19 - BC: O requisito e a US19 são classificados no Épico 2.1 do Backlog. <br> <strong>Satisfação</strong>: RE19 - US19: O requisito foi utilizado para produzir a História de Usuário 19.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JoseFilipi">José Filpi</a>, 2024.</p>
+
+<h3 id="re20">RE20</h3>
+<div align="center">
+  <strong>Tabela 21 -</strong> Cartão do Requisito 20 - C20
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE20</a>, <a href="../../elicitacao/Introspeccao">IT01</a>, <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../elicitacao/Priorização/first_things">FTF</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/Agil/historia_de_usuario">US20</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir que o usuário se autentique usando CPF e senha para acessar informações pessoais e serviços.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE20 - IT01: O requisito originou-se de uma Instrospecção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE20 - TLS: O requisito recebeu uma priorização Média no Three Level Scale. <br> <strong>Satisfação</strong>: RE20 - CDS: O requisito recebeu um valor de $6 do Desenvolvedor e $4 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE20 - FTF: O requisito recebeu uma pontuação de 1,40 no First Things First. <br> <strong>Agregação</strong>: RE20 - BC: O requisito e a US20 são classificados no Épico 1.1 do Backlog. <br> <strong>Satisfação</strong>: RE20 - US20: O requisito foi utilizado para produzir a História de Usuário 20.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JoseFilipi">José Filpi</a>, 2024.</p>
+
+<h3 id="re21">RE21</h3>
+<div align="center">
+  <strong>Tabela 22 -</strong> Cartão do Requisito 21 - C21
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE21</a>, <a href="../../elicitacao/Introspeccao">IT03</a>,<a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../elicitacao/Priorização/first_things">FTF</a>, <a href="../../modelagem/useCase">UC04</a>, <a href="../../modelagem/useCase">UC05</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/Agil/historia_de_usuario">US21.1</a>, <a href="../../modelagem/Agil/historia_de_usuario">US21.2</a>, <a href="../../modelagem/Agil/historia_de_usuario">US21.3</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve oferecer a funcionalidade de agendar, reagendar e cancelar perícias médicas.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE21 - IT03: O requisito originou-se de uma Introspecção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE21 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> <strong>Satisfação</strong>: RE21 - CDS: O requisito recebeu um valor de $4 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE21 - FTF: O requisito recebeu uma pontuação de 1,44 no First Things First. <br> Agregação: RE21 - BC: O requisito e as US21.1, US21.2 e US21.3 são classificados no Épico 2.2 do Backlog. <br> <strong>Agregação</strong>: RE21 - UC04: O requisito RE21 está no conjunto que deu origem ao caso de uso UC04. <br> <strong>Agregação</strong>: RE21 - UC05: O requisito RE21 está no conjunto que deu origem ao caso de uso UC05. <br> <strong>Satisfação</strong>: RE21 - US21.N: O requisito deu origem às US21.N.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JoseFilipi">José Filpi</a>, 2024.</p>
+
+<h3 id="re22">RE22</h3>
+<div align="center">
+  <strong>Tabela 23 -</strong> Cartão do Requisito 22 - C22
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE22</a>, <a href="../../elicitacao/Introspeccao">IT04</a>,<a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../elicitacao/Priorização/first_things">FTF</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/useCase">UC06</a>, <a href="../../modelagem/Agil/historia_de_usuario">US22</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve ser capaz de enviar documentos necessários para o processo de requerimento ou manutenção de benefícios.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE22 - IT04: O requisito originou-se de uma Instrospecção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE22 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> <strong>Satisfação</strong>: RE22 - CDS: O requisito recebeu um valor de $6 do Desenvolvedor e $4 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE22 - FTF: O requisito recebeu uma pontuação de 1,80 no First Things First. <br> <strong>Agregação</strong>: RE22 - BC: O requisito e a US22 são classificados no Épico 3.2 do Backlog. <br> <strong>Satisfação</strong>: RE22 - US22: O requisito deu origem a US22.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JoseFilipi">José Filpi</a>, 2024.</p>
+
+<h3 id="re23">RE23</h3>
+<div align="center">
+  <strong>Tabela 24 -</strong> Cartão do Requisito 23 - C23
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE23</a>, <a href="../../elicitacao/storytelling">ST03</a>, <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../elicitacao/Priorização/first_things">FTF</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/Agil/historia_de_usuario">US23</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve oferecer uma opção de recuperação de senha para usuários que a esquecerem.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE23 - ST03: O requisito originou-se de um Storytelling.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE23 - TLS: O requisito recebeu uma priorização Média no Three Level Scale. <br> <strong>Satisfação</strong>: RE23 - CDS: O requisito recebeu um valor de $6 do Desenvolvedor e $5 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE23 - FTF: O requisito recebeu uma pontuação de 1,64 no First Things First. <br> <strong>Agregação</strong>: RE23 - BC: O requisito e a US23 são classificados no Épico 1.2 do Backlog. <br> <strong>Satisfação</strong>: RE23 - US23: O requisito deu origem a US23.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JoseFilipi">José Filpi</a>, 2024.</p>
+
+<h3 id="re24">RE24</h3>
+<div align="center">
+  <strong>Tabela 25 -</strong> Cartão do Requisito 24 - C24
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE24</a>, <a href="../../elicitacao/storytelling">ST05</a>, <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../elicitacao/Priorização/first_things">FTF</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/Agil/historia_de_usuario">US24</a>, <a href="../../modelagem/useCase">UC06</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O usuário deve conseguir solicitar auxílio-acidente através de um formulário específico.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE24 - ST05: O requisito originou-se de um Storytelling.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE24 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale. <br> <strong>Satisfação</strong>: RE24 - CDS: O requisito recebeu um valor de $2 do Desenvolvedor e $3 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE24 - FTF: O requisito recebeu uma pontuação de 1,71 no First Things First. <br> <strong>Agregação</strong>: RE24 - BC: O requisito e a US24 são classificados no Épico 2.1 do Backlog. <br> <strong>Satisfação</strong>: RE24 - US24: O requisito deu origem a US24. <br> <strong>Agregação</strong>: RE24 - UC06: O requisito RE24 está no conjunto que deu origem ao caso de uso UC06.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JoseFilipi">José Filpi</a>, 2024.</p>
+
+<h3 id="re25">RE25</h3>
+<div align="center">
+  <strong>Tabela 26 -</strong> Cartão do Requisito 25 - C25
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE25</a>, <a href="../../elicitacao/storytelling">ST06</a>, <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../elicitacao/Priorização/first_things">FTF</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/Agil/historia_de_usuario">US25</a>, <a href="../../modelagem/useCase">UC06</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O formulário deve incluir campos para descrição do acidente, data do acidente, e anexos de documentos médicos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE25 - ST06: O requisito originou-se de um Storytelling.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE25 - TLS: O requisito recebeu uma priorização Média no Three Level Scale. <br> <strong>Satisfação</strong>: RE25 - CDS: O requisito recebeu um valor de $3 do Desenvolvedor e $2 do Usuário na técnica $100. <br> <strong>Satisfação</strong>: RE25 - FTF: O requisito recebeu uma pontuação de 1,64 no First Things First. <br> <strong>Agregação</strong>: RE25 - BC: O requisito e a US25 são classificados no Épico 2.1 do Backlog. <br> <strong>Satisfação</strong>: RE25 - US25: O requisito deu origem a US25. <br> <strong>Agregação</strong>: RE25 - UC06: O requisito RE25 está no conjunto que deu origem ao caso de uso UC06.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JoseFilipi">José Filpi</a>, 2024.</p>
+
+<h3 id="re26">RE26</h3>
+<div align="center">
+  <strong>Tabela  27-</strong> Cartão do Requisito 26-C26
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE26</a>, <a href="../../elicitacao/storytelling">ST09</a>, <a href="../../modelagem/useCase">UC12</a>, <a href="../../modelagem/cenarios">CEN08</a>, <a href="../../modelagem/Agil/historia_de_usuario">US26</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve permitir que um advogado acesse os processos dos seus clientes com a autorização destes.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE26 - ST09: O requisito originou-se da técnica de Storytelling.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE26 - UC12: O caso de uso (UC12) pode ser visto como uma forma de satisfazer o requisito (RE26). <br> <strong>Responsabilidade</strong>: RE26 - CEN08: O Cenário (CEN08) detalha a participação e ação dos advogados sobre os processos dos clientes (RE26). <br> <strong>Satisfação</strong>: RE26 - US26: A história de usuário (US26) pode ser vista como uma expressão de satisfação do requisito (RE26). <br> <strong>Representação</strong>: <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/main/docs/imagens/prints/RE26.jpeg">Print do Requisito Funcional que já está Implementado no aplicativo</a>.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>, 2024.</p>
+
+<h3 id="re27">RE27</h3>
+<div align="center">
+  <strong>Tabela  28-</strong> Cartão do Requisito 27 - C27
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE27</a>, <a href="../../elicitacao/storytelling">ST10</a>,<a href="../../elicitacao/storytelling">ST11</a>, <a href="../../modelagem/useCase">UC12</a>, <a href="../../modelagem/cenarios">CEN08</a>, <a href="../../modelagem/Agil/historia_de_usuario">US27</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve permitir que um advogado solicite e forneça documentos necessários ao processo diretamente ao sistema.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE27 - ST10/ST11: O requisito originou-se da técnica de Storytelling.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE27 - UC12: O caso de uso (UC12) satisfaz o requisito (RE27) ao permitir que advogados solicitem e forneçam documentos necessários ao processo diretamente no sistema. <br> <strong>Recurso</strong>: RE27 - CEN08: O cenário (CEN08) detalha os recursos necessários para que o advogado acesse e gerencie documentos e processos dos clientes, conforme requerido pelo RE27. <br> <strong>Satisfação</strong>: RE27 - US27: A história de usuário (US27) satisfaz o requisito (RE27) ao descrever como os advogados podem solicitar e fornecer documentos diretamente ao sistema para agilizar os processos dos clientes. <br></td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>, 2024.</p>
+
+<h3 id="re28">RE28</h3>
+<div align="center">
+  <strong>Tabela  29 -</strong> Cartão do Requisito 28 - C28
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE28</a>, <a href="../../elicitacao/brainStorm">BS16</a>,<a href="../../elicitacao/brainStorm">BS18</a>,<a href="../../elicitacao/entrevista">ENT16</a>,<a href="../../elicitacao/entrevista">ENT20</a>, <a href="../../elicitacao/entrevista">ENT21</a>, <a href="../../elicitacao/Introspeccao">IT08</a>, <a href="../../modelagem/specSuplementar">ES(RU001, +In001)</a>, <a href="../../modelagem/Agil/historia_de_usuario">US28</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve ser fácil de usar e intuitivo, mesmo para usuários com conhecimento técnico limitado e que minimize o número de cliques para realizar uma tarefa.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE28 - BS16/BS18/ENT16/ENT20/ENT21/IT08: O requisito originou-se das técnicas de BrainStorm, Entrevista e Introspecção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Representação</strong>: RE28 - RU001/+In001: A especificação suplementar (RU001, In001) representa detalhamentos do requisito (RE28) sobre a facilidade de uso e intuitividade do aplicativo. <br> <strong>Satisfação</strong>: RE28 - US28: A história de usuário (US28) satisfaz o requisito (RE28) ao descrever a necessidade de um aplicativo fácil de usar e intuitivo, com um número minimizado de cliques para realizar tarefas.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>, 2024.</p>
+
+<h3 id="re29">RE29</h3>
+<div align="center">
+  <strong>Tabela  30 -</strong> Cartão do Requisito 29 - C29
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE29</a>, <a href="../../elicitacao/brainStorm">BS17</a>, <a href="../../elicitacao/storytelling">ST12</a>, <a href="../../elicitacao/storytelling">ST19</a>, <a href="../../elicitacao/Introspeccao">IT15</a>, <a href="../../modelagem/specSuplementar">ES(RS001)</a>, <a href="../../modelagem/Agil/historia_de_usuario">US29</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve ser compatível com as versões mais recentes e anteriores dos sistemas operacionais iOS e Android e computador.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE29 - BS15/BS24/ST14/ST19/IT15: O requisito originou-se das técnicas de BrainStorm, Storytelling e Introspecção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Representação</strong>: RE29 - RS001: A especificação suplementar (RS001) representa detalhes do requisito (RE29) sobre a compatibilidade do aplicativo com dispositivos de diferentes fabricantes. <br> <strong>Satisfação</strong>: RE29 - US29: A história de usuário (US29) satisfaz o requisito (RE29) ao descrever a necessidade de compatibilidade do aplicativo com versões recentes e anteriores dos sistemas operacionais iOS, Android e computador.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>, 2024.</p>
+
+<h3 id="re30">RE30</h3>
+<div align="center">
+  <strong>Tabela  31 -</strong> Cartão do Requisito 30 - C30
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE30</a>, <a href="../../elicitacao/brainStorm">BS17</a>, <a href="../../elicitacao/storytelling">ST12</a>,  <a href=".../../elicitacao/questionario">QT04</a>, <a href="../../modelagem/Agil/historia_de_usuario">US30</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O sistema deve notificar o usuário sobre atualizações importantes em suas solicitações e agendamentos via notificações no aplicativo ou por email.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE30 - BS17/ST12/QT04: O requisito originou-se das técnicas de BrainStorm, Storytelling e Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Representação</strong>: RE30 - US30:  A história de usuário (US30) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE30).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>, 2024.</p>
+
+<h3 id="re31">RE31</h3>
+<div align="center">
+  <strong>Tabela  32-</strong> Cartão do Requisito 31-C31
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE31</a>, <a href="../../elicitacao/brainStorm">BS19</a>, <a href="../../modelagem/Agil/historia_de_usuario">US31</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve criar uma fila digital referente aos agendamentos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;">Agregação: RE31 - BS19: O requisito originou-se da técnica de Brainstorming.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;">Satisfação: RE31 - US31: A história de usuário (US31) pode ser vista como uma expressão de uma necessidade do usuário que será satisfeita pelo requisito (RE31).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>, 2024.</p>
+
+<h3 id="re32">RE32</h3>
+<div align="center">
+  <strong>Tabela  33-</strong> Cartão do Requisito 32-C32
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE32</a>, <a href="../../elicitacao/brainStorm">BS20</a>, <a href="../../elicitacao/Introspeccao">IT09</a>, <a href="../../elicitacao/Introspeccao">IT10</a>, <a href="../../elicitacao/storytelling">ST13</a>, <a href="../../elicitacao/questionario">QT06</a>, <a href="../../modelagem/specSuplementar">ES(RU007, RU008, RU009, RU010, RU011, +In002)</a>, <a href="../../modelagem/Agil/historia_de_usuario">US32</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve possuir ferramentas de acessibilidade como navegação guiada, alto contraste, comando por voz e possibilidade de aumentar a fonte.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE32 - BS20: O requisito originou-se da técnica de Brainstorming. <br> <strong>Agregação</strong>: RE32 - IT09: O requisito originou-se da técnica de Introspecção. <br> <strong>Agregação</strong>: RE32 - IT10: O requisito originou-se da técnica de Introspecção. <br> <strong>Agregação</strong>: RE32 - ST13: O requisito originou-se da técnica de Storytelling. <br> <strong>Agregação</strong>: RE32 - QT06: O requisito originou-se da técnica de Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE32 - US32:  A história de usuário (US32) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE32). <br>  <strong>Satisfação</strong>: RE32 - ES(RU007, RU008, RU009, RU010, RU011, +In002): As especificações suplementares fornecem critérios e detalhes que satisfazem o requisito de acessibilidade (RE32).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>, 2024.</p>
+
+<h3 id="re33">RE33</h3>
+<div align="center">
+  <strong>Tabela  34-</strong> Cartão do Requisito 33-C33
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE33</a>, <a href="../../elicitacao/brainStorm">BS21</a>,  <a href="../../elicitacao/storytelling">ST16</a>, <a href="../../modelagem/Agil/historia_de_usuario">US33</a>, <a href="../../Agil/nfr">RNF05</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve ter integração com outros serviços do governo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE33 - BS21: O requisito originou-se da técnica de Brainstorming. <br> <strong>Agregação</strong>: RE33 - ST16: O requisito originou-se da técnica de Storytelling.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE33 - US33:  A história de usuário (US33) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE33). <br>  <strong>Satisfação</strong>: RE32 - RNF05: A técnica (RNF05) detalha uma forma de garantir que o requisito (RE33) seja satisfeito.</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>, 2024.</p>
+
+<h3 id="re34">RE34</h3>
+<div align="center">
+  <strong>Tabela  35-</strong> Cartão do Requisito 34-C34
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE34</a>, <a href="../../elicitacao/brainStorm">BS22</a>,  <a href="../../elicitacao/storytelling">ST17</a>, <a href="../../modelagem/Agil/historia_de_usuario">US34</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve permitir outras formas de acesso como profissionais do legislativo para o acompanhamento facilitado de documentos e processos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE34 - BS22: O requisito originou-se da técnica de Brainstorming. <br> <strong>Agregação</strong>: RE34 - ST17: O requisito originou-se da técnica de Storytelling.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE33 - US34:  A história de usuário (US34) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE34).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>, 2024.</p>
+
+<h3 id="re35">RE35</h3>
+<div align="center">
+  <strong>Tabela  36-</strong> Cartão do Requisito 35-C35
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE35</a>, <a href="../../elicitacao/brainStorm">BS25</a>, <a href="../../elicitacao/Introspeccao">IT16</a>, <a href="../../elicitacao/storytelling">ST18</a>, <a href="../../modelagem/specSuplementar">ES(RS004)</a>, <a href="../../modelagem/Agil/historia_de_usuario">US35</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve oferecer suporte em vários idiomas, especialmente português.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE35 - BS25: O requisito originou-se da técnica de Brainstorming. <br> <strong>Agregação</strong>: RE35 - IT16: O requisito originou-se da técnica de Introspecção. <br>  <strong>Agregação</strong>: RE35 - ST18: O requisito originou-se da técnica de Storytelling.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE35 - US35:  A história de usuário (US35) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE35). <br>  <strong>Satisfação</strong>: RE35 - ES(RS004): A especificação suplementar fornece critérios e detalhes que satisfazem o requisito de acessibilidade (RE32).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>, 2024.</p>
+
+<h3 id="re36">RE36</h3>
+<div align="center">
+  <strong>Tabela 37 -</strong> Cartão do Requisito 36 - C36
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE36</a>, <a href="../../elicitacao/entrevista">ENT17</a>, <a href="../../modelagem/Agil/historia_de_usuario">US36</a>, <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>,<a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/specSuplementar">ES(RR002, RR003, RR006, RR007, RR008, RP003, RP004, RP006, RP007, RP008, RP009, RS006, +Im002, +Im005)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Deve ser capaz de lidar com um grande número de processos e distribuí-los nacionalmente.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE36 - ENT17: O requisito originou-se da Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE36 - US36: A história de usuário (US36) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE36) <br> <strong>Satisfação</strong>: RE36 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.  <br> Satisfação: RE36 - CDS: O requisito recebeu um valor de $2 do Desenvolvedor e $2 do Usuário na técnica $100. <br>  <strong>Satisfação</strong>: RE36 - ES(RR002, RR003, RR006, RR007, RR008, RP003, RP004, RP006, RP007, RP008, RP009, RS006, +Im002, +Im005): As especificações suplementares fornecem critérios e detalhes que satisfazem o requisito de acessibilidade (RE36).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>, 2024.</p>
+
+<h3 id="re37">RE37</h3>
+<div align="center">
+  <strong>Tabela 38 -</strong> Cartão do Requisito 37 - C37
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE37</a>, <a href="../../elicitacao/entrevista">ENT18</a>, <a href="../../elicitacao/entrevista">ENT22</a>,  <a href="../../modelagem/Agil/historia_de_usuario">US37</a>, <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/specSuplementar">ES(RU001, RU005, RU006, RU017, RP001, RP002, RP003, +In001,+In003)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">Deve ser eficiente, permitindo que os usuários realizem tarefas rápidas em 1-5 minutos e tarefas mais complexas em até 1h20.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE37 - ENT18 e ENT22: O requisito originou-se da Entrevista.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE37 - US37: A história de usuário (US37) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE37) <br> <strong>Satisfação</strong>: RE37 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.  <br> <strong>Satisfação</strong>: RE37 - CDS: O requisito recebeu um valor de $3 do Desenvolvedor e $7 do Usuário na técnica $100. <br>  <strong>Satisfação</strong>: RE37 - ES(RU001, RU005, RU006, RU017, RP001, RP002, RP003, +In001,+In003): As especificações suplementares fornecem critérios e detalhes que satisfazem o requisito de acessibilidade (RE37).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>, 2024.</p>
+
+<h3 id="re38">RE38</h3>
+<div align="center">
+  <strong>Tabela 39 -</strong> Cartão do Requisito 38 - C38
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE38</a>, <a href="../../elicitacao/Introspeccao">IT11</a>, <a href="../../elicitacao/questionario">QT06</a>,<a href="../../modelagem/Agil/historia_de_usuario">US38</a>, <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/specSuplementar">ES(RU003, RU004, RU007, RU018, RU019, +In002)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve ser compatível com tecnologias assistivas, como teclados virtuais, controle por voz e dispositivos de entrada alternativos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE38 - IT11: O requisito originou-se da técnica de Introspecção. <br> Agregação: RE38 - QT06: O requisito originou-se da técnica de Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE38 - US38: A história de usuário (US38) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE38) <br> <strong>Satisfação</strong>: RE38 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.  <br> <strong>Satisfação</strong>: RE38 - CDS: O requisito recebeu um valor de $2 do Desenvolvedor e $2 do Usuário na técnica $100. <br>  <strong>Satisfação</strong>: RE38 - ES(RU003, RU004, RU007, RU018, RU019, +In002): As especificações suplementares fornecem critérios e detalhes que satisfazem o requisito de acessibilidade (RE38).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>, 2024.</p>
+
+<h3 id="re39">RE39</h3>
+<div align="center">
+  <strong>Tabela 40 -</strong> Cartão do Requisito 39 - C39
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE39</a>,<a href="../../elicitacao/brainStorm">BS23</a>, <a href="../../elicitacao/entrevista">ENT19</a>, <a href="../../elicitacao/Introspeccao">IT12</a>, <a href="../../elicitacao/storytelling">ST15</a>, <a href="../../elicitacao/questionario">QT07</a>, <a href="../../modelagem/Agil/historia_de_usuario">US29</a>,<a href="../../modelagem/Agil/historia_de_usuario">US39</a> <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/specSuplementar">ES(RR004, +Im001,+Im003,+Im004)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve garantir a segurança das informações pessoais dos usuários através de criptografia de dados e autenticação robusta.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE39 - BS23: O requisito originou-se da técnica de Brainstorming. <strong>Agregação</strong>: RE39 - ENT19: O requisito originou-se da Entrevista. <br> <strong>Agregação</strong>: RE39 - IT12: O requisito originou-se da técnica de Introspecção. . <br> <strong>Agregação</strong>: RE39 - ST15: O requisito originou-se da técnica de Storytelling. <br> <strong>Agregação</strong>: RE39 - QT07: O requisito originou-se da técnica de Questionário.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE39 - US29 e US39: AS históriaS de usuário (US29 e US39) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE39) <br> <strong>Satisfação</strong>: RE39 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.  <br> <strong>Satisfação</strong>: RE39 - CDS: O requisito recebeu um valor de $10 do Desenvolvedor e $2 do Usuário na técnica $100. <br>  <strong>Satisfação</strong>: RE39 - ES(RR004, +Im001,+Im003,+Im004): As especificações suplementares fornecem critérios e detalhes que satisfazem o requisito de acessibilidade (RE39).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>, 2024.</p>
+
+<h3 id="re40">RE40</h3>
+<div align="center">
+  <strong>Tabela 41 -</strong> Cartão do Requisito 40 - C40
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE40</a>, <a href="../../elicitacao/Introspeccao">IT13</a>, <a href="../../modelagem/Agil/historia_de_usuario">US40</a> <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/specSuplementar">ES(RP001, RP002)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve responder a comandos do usuário em menos de 3 segundos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE40 - IT13: O requisito originou-se da técnica de Introspecção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE40 - US40: A história de usuário (US40) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE40) <br> <strong>Satisfação</strong>: RE40 - TLS: O requisito recebeu uma priorização Alta no Three Level Scale.  <br> <strong>Satisfação</strong>: RE40 - CDS: O requisito recebeu um valor de $2 do Desenvolvedor e $15 do Usuário na técnica $100. <br>  <strong>Satisfação</strong>: RE40 - ES(RP001, RP002): As especificações suplementares fornecem critérios e detalhes que satisfazem o requisito de acessibilidade (RE40).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>, 2024.</p>
+
+<h3 id="re41">RE41</h3>
+<div align="center">
+  <strong>Tabela 42 -</strong> Cartão do Requisito 41 - C41
+</div>
+
+<p><center></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Categoria:</strong></th>
+<th style="text-align: left;">Desenvolvimento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Elementos:</strong></td>
+<td style="text-align: left;"><a href="../../elicitacao/requisitosElicitados">RE41</a>, <a href="../../elicitacao/Introspeccao">IT14</a>, <a href="../../modelagem/Agil/historia_de_usuario">US41</a> <a href="../../elicitacao/Priorização/threelevelscale">TLS</a>, <a href="../../elicitacao/Priorização/100$">CDS</a>, <a href="../../modelagem/Agil/backlog">BC</a>, <a href="../../modelagem/specSuplementar">ES(RR001, RR006, RR008, RP005)</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descrição do Requisito</strong></td>
+<td style="text-align: left;">O aplicativo deve estar disponível 24 horas por dia, 7 dias por semana, com uma taxa de uptime de 99.9%.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Backward-from:</strong></td>
+<td style="text-align: left;"><strong>Agregação</strong>: RE41 - IT14: O requisito originou-se da técnica de Introspecção.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Elos Forward-from:</strong></td>
+<td style="text-align: left;"><strong>Satisfação</strong>: RE41 - US41: A história de usuário (US41) especifica uma necessidade do usuário que será satisfeita pelo requisito (RE41) <br> <strong>Satisfação</strong>: RE41 - TLS: O requisito recebeu uma priorização Baixa no Three Level Scale.  <br> <strong>Satisfação</strong>: RE41 - CDS: O requisito recebeu um valor de $8 do Desenvolvedor e $5 do Usuário na técnica $100. <br>  <strong>Satisfação</strong>: RE41 - ES(RR001, RR006, RR008, RP005): As especificações suplementares fornecem critérios e detalhes que satisfazem o requisito de acessibilidade (RE41).</td>
+</tr>
+</tbody>
+</table>
+<p></center></p>
+<p align="center">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>, 2024.</p>
+
+<h2 id="referencias-bibliograficas">Referências Bibliográficas</h2>
+<blockquote>
+<p><a id="RP1" href="#TEC1">1.</a>SAYÃO, Miriam; LEITE, Julio. Rastreabilidade de Requisitos. PUC-Rio: Departamento de Informática, ISSN 0103-9741, Rio de Janeiro, 2005. Disponível em: <a href="https://www-di.inf.puc-rio.br/~julio/rastre.pdf">https://www-di.inf.puc-rio.br/~julio/rastre.pdf</a>. Acesso em: 21 jun. 2024.</p>
+<p><a id="RP2" href="#TEC2">2.</a> Kotonya, Gerald, and Ian Sommerville. "Requirements Engineering: Processes and Techniques." John Wiley &amp; Sons, 1998. Disponível em: (https://www.acqnotes.com/Attachments/The%20Requirements%20Engineering%20Handbook%20by%20Ralph%20R.%20Young.pdf).Acesso em: 22 jun. 2024.</p>
+<p><a id="RP3" href="#TEC3">3.</a> SERRANO, Milene, SERRANO, Maurício. Requisitos (Aula 26): Elicitação, Modelagem e Análise. UnB Gama, Brasília, 2023. disponível em: <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/rastrear/docs/imagens/referencias/rastreabilidade/Requisitos%20-%20Aula%20026.pdf">https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/blob/rastrear/doimagens/referencias/rastreabilidade/Requisitos%20-%20Aula%20026.pdf</a>. Acesso em: 18 jun. 2024.</p>
+</blockquote>
+<h2 id="bibliografia">Bibliografia</h2>
+<blockquote>
+<p><a id="RP1" href="#TEC1">1.</a> SAYÃO, Miriam; LEITE, Julio. Rastreabilidade de Requisitos. PUC-Rio: Departamento de Informática, ISSN 0103-9741, Rio de Janeiro, 2005. Disponível em: <a href="https://www-di.inf.puc-rio.br/~julio/rastre.pdf">https://www-di.inf.puc-rio.br/~julio/rastre.pdf</a>. Acesso em: 18 jun. 2024.</p>
+<p><a id="RP2" href="#TEC2">2.</a> WIEGERS, Karl; BEATTY, Joy. Software Requirements. 3. ed. Redmond: Microsoft Press, 2013. disponível em: <a href="https://www.booksfree.org/wp-content/uploads/2022/03/Software_Requirements_3rd_Edition_compressed.pdf">https://www.booksfree.org/wp-content/uploads/2022/03/Software_Requirements_3rd_Edition_compressed.pdf</a>. Acesso em: 18 jun. 2024.</p>
+</blockquote>
+<h2 id="historico-de-versao">Histórico de Versão</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Autor(es)</th>
+<th style="text-align: center;">Data de revisão</th>
+<th style="text-align: center;">Revisor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>1.0</code></td>
+<td style="text-align: center;">21/06/2024</td>
+<td style="text-align: center;">Criação da página</td>
+<td style="text-align: center;"><a href="https://github.com/JohnnyLopess">Johnny Lopes</a></td>
+<td style="text-align: center;">22/06/2024</td>
+<td style="text-align: center;"><a href="https://github.com/acamposs">Amanda Campos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.1</code></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;">Adicionando informações na página</td>
+<td style="text-align: center;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;"><a href="https://github.com/JohnnyLopess">Johnny Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.2</code></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;">Adicionando Elos.</td>
+<td style="text-align: center;"><a href="https://github.com/JohnnyLopess">Johnny Lopes</a></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;"><a href="https://github.com/acamposs">Amanda Campos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.3</code></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;">Adicionando Elos.</td>
+<td style="text-align: center;"><a href="https://github.com/acamposs">Amanda Campos</a></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;"><a href="https://github.com/vitorfleonardo">Vitor Feijó</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.4</code></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;">Adicionando Elos.</td>
+<td style="text-align: center;"><a href="https://github.com/vitorfleonardo">Vitor Feijó</a></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;"><a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.5</code></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;">Adicionando Elos.</td>
+<td style="text-align: center;"><a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;"><a href="https://github.com/GabrielMS00">Gabriel Souza</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.6</code></td>
+<td style="text-align: center;">23/06/2024</td>
+<td style="text-align: center;">Adicionando Elos.</td>
+<td style="text-align: center;"><a href="https://github.com/GabrielMS00">Gabriel Souza</a></td>
+<td style="text-align: center;">24/06/2024</td>
+<td style="text-align: center;"><a href="https://github.com/JohnnyLopess">Johnny Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.7</code></td>
+<td style="text-align: center;">04/07/2024</td>
+<td style="text-align: center;">Alteração do documento.</td>
+<td style="text-align: center;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+<td style="text-align: center;">04/07/2024</td>
+<td style="text-align: center;"><a href="https://github.com/acamposs">Amanda Campos</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>

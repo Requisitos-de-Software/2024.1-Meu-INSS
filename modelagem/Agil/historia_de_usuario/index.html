@@ -1,0 +1,6176 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS/modelagem/Agil/historia_de_usuario/">
+      
+      
+        <link rel="prev" href="../backlog/">
+      
+      
+        <link rel="next" href="../nfr2/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Histórias de Usuário - Meu INSS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introducao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Meu INSS" class="md-header__button md-logo" aria-label="Meu INSS" data-md-component="logo">
+      
+  <img src="../../../imagens/inss-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Meu INSS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Histórias de Usuário
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="indigo"  aria-label="Mudar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Mudar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3m0-4.5c5 0 9.27 3.11 11 7.5-1.73 4.39-6 7.5-11 7.5S2.73 16.39 1 12c1.73-4.39 6-7.5 11-7.5M3.18 12a9.821 9.821 0 0 0 17.64 0 9.821 9.821 0 0 0-17.64 0Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1-Meu-INSS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../apresentacao/apresentacao01/" class="md-tabs__link">
+          
+  
+  Apresentação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../atas/Ata1-24.03.2024/" class="md-tabs__link">
+          
+  
+  Atas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../planejamento/tap/" class="md-tabs__link">
+          
+  
+  Planejamento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../pre-rastreabilidade/rich_picture/" class="md-tabs__link">
+          
+  
+  Pré-Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../elicitacao/perfil_de_Usuario/" class="md-tabs__link">
+          
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../specSuplementar/" class="md-tabs__link">
+          
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../verificacao/preparacao/RichPicture/" class="md-tabs__link">
+          
+  
+  Verificação e Validação
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../rastreabilidade/Elos/" class="md-tabs__link">
+          
+  
+  Rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../entregafinal/App_select/" class="md-tabs__link">
+          
+  
+  Entrega Final
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Meu INSS" class="md-nav__button md-logo" aria-label="Meu INSS" data-md-component="logo">
+      
+  <img src="../../../imagens/inss-logo.png" alt="logo">
+
+    </a>
+    Meu INSS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2024.1-Meu-INSS" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2024.1-Meu-INSS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Apresentação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Apresentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacao/apresentacao01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacao/apresentacao02/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacao/apresentacao03/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacao/apresentacao04/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacao/apresentacao05.1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 5.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacao/apresentacao06/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacao/apresentacao05.2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 5.2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apresentacao/apresentacao07/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentação 7
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Atas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Atas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/Ata1-24.03.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/Ata2-31.03.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 02
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/Ata3-07.04.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 03
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/Ata4-05.05.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 04
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../atas/Ata5-02.06.2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ata 05
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Planejamento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/tap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termo de Abertura de Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/EAP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EAP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/cronograma_planejado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cronograma Planejado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/cronograma_executado/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cronograma Executado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/heatmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Heatmap
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/aplicativo_avaliados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aplicativo escolhido
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/copia_termo_de_uso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Termos de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ferramentas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../planejamento/metodologia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metodologia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pré-Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pre-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich Picture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Elicitação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/perfil_de_Usuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perfil de Usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/personas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Técnicas de Elicitação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas de Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/brainStorm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/Introspeccao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introspecção
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrevista
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/questionario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Questionário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/storytelling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storytelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Técnicas de Priorização
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas de Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/Prioriza%C3%A7%C3%A3o/threelevelscale/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three level scale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/Prioriza%C3%A7%C3%A3o/100%24/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    100$
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/Prioriza%C3%A7%C3%A3o/first_things/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Things First
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../elicitacao/requisitosElicitados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requisitos Elicitados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Modelagem
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../specSuplementar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useCase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../validusecase/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Validação dos casos de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cenarios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lexicos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ágil
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de Usuário
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historias-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórias de Usuário
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Histórias de Usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#us01-realizar-login-com-acesso-unificado-do-govbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      US01 - Realizar login com acesso unificado do GOV.br
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us02-receber-termo-de-uso-no-primeiro-acesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      US02 - Receber termo de uso no primeiro acesso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us03-acessar-documentos-legislativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US03 - Acessar documentos legislativos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us04-acessar-suporte-tecnico" class="md-nav__link">
+    <span class="md-ellipsis">
+      US04 - Acessar suporte técnico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us05-acessar-tutoriais-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      US05 - Acessar tutoriais de uso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us06-agendar-horario-em-uma-agencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      US06 - Agendar horário em uma agência
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us07-visualizar-detalhes-dos-beneficios" class="md-nav__link">
+    <span class="md-ellipsis">
+      US07 - Visualizar detalhes dos benefícios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us08-simular-tempo-de-contribuicao-e-aposentadoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      US08 - Simular tempo de contribuição e aposentadoria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us09-checar-extrato-da-aposentadoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      US09 - Checar extrato da aposentadoria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us10-acessar-extrato-anual-de-imposto-de-renda" class="md-nav__link">
+    <span class="md-ellipsis">
+      US10 - Acessar extrato anual de imposto de renda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us11-acessar-extrato-anual-de-emprestimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US11 - Acessar extrato anual de empréstimo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us12-autenticacao-biometrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      US12 - Autenticação biométrica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us13-acesso-e-visualizacao-do-cadastro-nacional-de-informacoes-sociais-cnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      US13 - Acesso e visualização do Cadastro Nacional de Informações Sociais (CNIS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us14-acesso-a-area-de-ferramentas-dos-beneficios-dos-segurados" class="md-nav__link">
+    <span class="md-ellipsis">
+      US14 - Acesso à área de ferramentas dos benefícios dos segurados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us15-requerimento-de-beneficios-e-atualizacao-do-vinculo-do-cnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      US15 - Requerimento de benefícios e atualização do vínculo do CNIS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us16-fornecimento-de-informacoes-referentes-a-pagamentos-nao-recebidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US16 - Fornecimento de informações referentes a pagamentos não recebidos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us17-atualizacao-de-dados-pessoais" class="md-nav__link">
+    <span class="md-ellipsis">
+      US17 - Atualização de dados pessoais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us18-alerta-sobre-emprestimos-indevidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US18 - Alerta sobre empréstimos indevidos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us19-bloquear-emprestimos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US19 - Bloquear empréstimos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us20-acesso-ao-sistema-mediante-cpf-e-senha" class="md-nav__link">
+    <span class="md-ellipsis">
+      US20 - Acesso ao sistema mediante CPF e senha
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us211-agendar-pericias-medicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US21.1 - Agendar Perícias Médicas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us212-reagendar-pericias-medicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US21.2 - Reagendar Perícias Médicas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us213-cancelar-pericias-medicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US21.3 - Cancelar Perícias Médicas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us22-enviar-documentos-necessarios-para-beneficios" class="md-nav__link">
+    <span class="md-ellipsis">
+      US22 - Enviar Documentos Necessários para Benefícios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us23-recuperacao-de-senha" class="md-nav__link">
+    <span class="md-ellipsis">
+      US23 - Recuperação de Senha
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us24-solicitar-auxilio-acidente" class="md-nav__link">
+    <span class="md-ellipsis">
+      US24 - Solicitar Auxílio-Acidente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us25-formulario-de-auxilio-acidente" class="md-nav__link">
+    <span class="md-ellipsis">
+      US25 - Formulário de Auxílio-Acidente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us26-acesso-de-advogado-aos-processos-dos-clientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      US26 - Acesso de Advogado aos Processos dos Clientes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us27-solicitar-e-fornecer-documentos-pelo-advogado" class="md-nav__link">
+    <span class="md-ellipsis">
+      US27 - Solicitar e Fornecer Documentos pelo Advogado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us28-facilidade-de-uso-e-intuitividade-do-aplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US28 - Facilidade de Uso e Intuitividade do Aplicativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us29-compatibilidade-com-diferentes-sistemas-operacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      US29 - Compatibilidade com Diferentes Sistemas Operacionais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us30-notificacao-de-atualizacoes-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      US30 - Notificação de Atualizações Importantes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us31-criacao-de-fila-digital-para-agendamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US31 - Criação de Fila Digital para Agendamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us32-ferramentas-de-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      US32 - Ferramentas de Acessibilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us33-integracao-com-outros-servicos-do-governo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US33 - Integração com Outros Serviços do Governo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us34-acesso-para-profissionais-do-legislativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US34 - Acesso para Profissionais do Legislativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us35-suporte-em-varios-idiomas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US35 - Suporte em Vários Idiomas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us36-escalabilidade-nacional-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      US36 - Escalabilidade Nacional do Sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us37-eficiencia-nas-tarefas-do-aplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US37 - Eficiência nas Tarefas do Aplicativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us38-compatibilidade-com-tecnologias-assistivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US38 - Compatibilidade com Tecnologias Assistivas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us39-garantia-de-seguranca-das-informacoes-pessoais" class="md-nav__link">
+    <span class="md-ellipsis">
+      US39 - Garantia de Segurança das Informações Pessoais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us40-tempo-de-resposta-do-aplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US40 - Tempo de Resposta do Aplicativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us41-disponibilidade-do-aplicativo-247" class="md-nav__link">
+    <span class="md-ellipsis">
+      US41 - Disponibilidade do Aplicativo 24/7
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nfr2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NFR Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Verificação e Validação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação e Validação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Preparação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Preparação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/RichPicture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rich Picture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/PerfildeUsuario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perfil de Usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Persona/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Personas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Brainstorm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brainstorm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Entrevista/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrevista
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Introspeccao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introspecção
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Questionario/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Questionário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/AnalisedeDoc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Análise de documentação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Storytteling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storytelling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/FirstThings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First Things First
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/100dol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    100$
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/InOrOut/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    In or Out
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/CasosDeUsos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagrama de casos de uso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/EspecSuplementar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Lexicos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Léxicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Cenarios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cenários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Backlog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backlog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/HistoriasdeUser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Histórias de usuários
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/NFR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NFR Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/ThreeLevelScale/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three Level Scale
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Matriz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matriz de rastreabilidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/preparacao/Elos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Inspeções
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Inspeções
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_1" id="__nav_8_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Grupo 8 - Consumidor.gov
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo 8 - Consumidor.gov
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo8/entrega1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo8/entrega2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo8/entrega3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo8/entrega4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2" id="__nav_8_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Grupo 7 - MeuINSS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Grupo 7 - MeuINSS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo7/entrega1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo7/entrega2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo7/entrega3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo7/entrega4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 4
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/inspecoes/grupo7/entrega5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entrega 6
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Validação
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Validação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/validacao/prototipo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prototipação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../verificacao/validacao/verificaInformal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comprovação Informal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Rastreabilidade
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/Elos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../rastreabilidade/matriz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Matriz de Rastreabilidade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Entrega Final
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega Final
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/App_select/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aplicativo Selecionado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/Planejamento/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planejamento dos Recursos e das Entregas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/Exec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Execução do Projeto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/Resultados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resultados Alcançados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/Tecnicas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Técnicas Utilizadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/Artefatos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Artefatos Criados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/V%26V/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Método de Verificação e Validação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/Ferramentas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ferramentas Utilizadas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../entregafinal/Apresentacao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Apresentações
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historias-de-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórias de Usuário
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Histórias de Usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#us01-realizar-login-com-acesso-unificado-do-govbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      US01 - Realizar login com acesso unificado do GOV.br
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us02-receber-termo-de-uso-no-primeiro-acesso" class="md-nav__link">
+    <span class="md-ellipsis">
+      US02 - Receber termo de uso no primeiro acesso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us03-acessar-documentos-legislativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US03 - Acessar documentos legislativos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us04-acessar-suporte-tecnico" class="md-nav__link">
+    <span class="md-ellipsis">
+      US04 - Acessar suporte técnico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us05-acessar-tutoriais-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      US05 - Acessar tutoriais de uso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us06-agendar-horario-em-uma-agencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      US06 - Agendar horário em uma agência
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us07-visualizar-detalhes-dos-beneficios" class="md-nav__link">
+    <span class="md-ellipsis">
+      US07 - Visualizar detalhes dos benefícios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us08-simular-tempo-de-contribuicao-e-aposentadoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      US08 - Simular tempo de contribuição e aposentadoria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us09-checar-extrato-da-aposentadoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      US09 - Checar extrato da aposentadoria
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us10-acessar-extrato-anual-de-imposto-de-renda" class="md-nav__link">
+    <span class="md-ellipsis">
+      US10 - Acessar extrato anual de imposto de renda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us11-acessar-extrato-anual-de-emprestimo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US11 - Acessar extrato anual de empréstimo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us12-autenticacao-biometrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      US12 - Autenticação biométrica
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us13-acesso-e-visualizacao-do-cadastro-nacional-de-informacoes-sociais-cnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      US13 - Acesso e visualização do Cadastro Nacional de Informações Sociais (CNIS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us14-acesso-a-area-de-ferramentas-dos-beneficios-dos-segurados" class="md-nav__link">
+    <span class="md-ellipsis">
+      US14 - Acesso à área de ferramentas dos benefícios dos segurados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us15-requerimento-de-beneficios-e-atualizacao-do-vinculo-do-cnis" class="md-nav__link">
+    <span class="md-ellipsis">
+      US15 - Requerimento de benefícios e atualização do vínculo do CNIS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us16-fornecimento-de-informacoes-referentes-a-pagamentos-nao-recebidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US16 - Fornecimento de informações referentes a pagamentos não recebidos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us17-atualizacao-de-dados-pessoais" class="md-nav__link">
+    <span class="md-ellipsis">
+      US17 - Atualização de dados pessoais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us18-alerta-sobre-emprestimos-indevidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US18 - Alerta sobre empréstimos indevidos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us19-bloquear-emprestimos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US19 - Bloquear empréstimos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us20-acesso-ao-sistema-mediante-cpf-e-senha" class="md-nav__link">
+    <span class="md-ellipsis">
+      US20 - Acesso ao sistema mediante CPF e senha
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us211-agendar-pericias-medicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US21.1 - Agendar Perícias Médicas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us212-reagendar-pericias-medicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US21.2 - Reagendar Perícias Médicas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us213-cancelar-pericias-medicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US21.3 - Cancelar Perícias Médicas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us22-enviar-documentos-necessarios-para-beneficios" class="md-nav__link">
+    <span class="md-ellipsis">
+      US22 - Enviar Documentos Necessários para Benefícios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us23-recuperacao-de-senha" class="md-nav__link">
+    <span class="md-ellipsis">
+      US23 - Recuperação de Senha
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us24-solicitar-auxilio-acidente" class="md-nav__link">
+    <span class="md-ellipsis">
+      US24 - Solicitar Auxílio-Acidente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us25-formulario-de-auxilio-acidente" class="md-nav__link">
+    <span class="md-ellipsis">
+      US25 - Formulário de Auxílio-Acidente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us26-acesso-de-advogado-aos-processos-dos-clientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      US26 - Acesso de Advogado aos Processos dos Clientes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us27-solicitar-e-fornecer-documentos-pelo-advogado" class="md-nav__link">
+    <span class="md-ellipsis">
+      US27 - Solicitar e Fornecer Documentos pelo Advogado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us28-facilidade-de-uso-e-intuitividade-do-aplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US28 - Facilidade de Uso e Intuitividade do Aplicativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us29-compatibilidade-com-diferentes-sistemas-operacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      US29 - Compatibilidade com Diferentes Sistemas Operacionais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us30-notificacao-de-atualizacoes-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      US30 - Notificação de Atualizações Importantes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us31-criacao-de-fila-digital-para-agendamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      US31 - Criação de Fila Digital para Agendamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us32-ferramentas-de-acessibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      US32 - Ferramentas de Acessibilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us33-integracao-com-outros-servicos-do-governo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US33 - Integração com Outros Serviços do Governo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us34-acesso-para-profissionais-do-legislativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US34 - Acesso para Profissionais do Legislativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us35-suporte-em-varios-idiomas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US35 - Suporte em Vários Idiomas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us36-escalabilidade-nacional-do-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      US36 - Escalabilidade Nacional do Sistema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us37-eficiencia-nas-tarefas-do-aplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US37 - Eficiência nas Tarefas do Aplicativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us38-compatibilidade-com-tecnologias-assistivas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US38 - Compatibilidade com Tecnologias Assistivas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us39-garantia-de-seguranca-das-informacoes-pessoais" class="md-nav__link">
+    <span class="md-ellipsis">
+      US39 - Garantia de Segurança das Informações Pessoais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us40-tempo-de-resposta-do-aplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      US40 - Tempo de Resposta do Aplicativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#us41-disponibilidade-do-aplicativo-247" class="md-nav__link">
+    <span class="md-ellipsis">
+      US41 - Disponibilidade do Aplicativo 24/7
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Versões
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Histórias de Usuário</h1>
+
+<h2 id="introducao">Introdução</h2>
+<p>As histórias de usuário desempenham um papel crucial no processo ágil de criação de software, especialmente dentro do método Scrum. Elas consistem em relatos breves que descrevem uma funcionalidade sob a perspectiva do 
+usuário final. Cada história de usuário tipicamente detalha quem é o usuário, o que ele pretende alcançar e por que isso é relevante para ele. Essas narrativas são redigidas de forma simples e focadas no usuário, 
+facilitando a compreensão por parte de todos os membros da equipe de desenvolvimento, independentemente de suas habilidades técnicas. </p>
+<h2 id="objetivo">Objetivo</h2>
+<p>Dentre os principais objetivos do uso das histórias de usuários como um artefato importante de modelagem para o nosso grupo, que tem como foco o projeto do APP MEU INSS, estão os seguintes tópicos:</p>
+<ul>
+<li><b>Entendimento das necessidades do usuário:</b> As histórias de usuário capacitam a equipe de desenvolvimento a compreender as demandas, aspirações e prioridades dos usuários finais em relação ao produto ou sistema.</li>
+<li><b>Orientação pelo usuário:</b> Elas asseguram que o desenvolvimento do produto se concentre nas necessidades reais dos usuários finais, mantendo o usuário como o ponto focal durante todo o processo.</li>
+<li><b>Comunicação transparente:</b> As histórias de usuário atuam como um meio de comunicação direta entre os interessados no projeto e a equipe de desenvolvimento, garantindo que todos tenham uma visão compartilhada dos
+  requisitos e objetivos do projeto.</li>
+<li><b>Planejamento e priorização eficientes:</b> Elas auxiliam na identificação e priorização das funcionalidades mais relevantes para os usuários, facilitando o processo de tomada de decisão sobre o que deve ser desenvolvido
+  primeiro.</li>
+<li><b>Estimativa e divisão de tarefas detalhadas:</b> As histórias de usuário são desmembradas em tarefas menores durante o planejamento do sprint, simplificando a avaliação do esforço necessário para sua implementação e
+  possibilitando a distribuição equitativa entre os membros da equipe.</li>
+<li><b>Adaptação e flexibilidade:</b> Elas permitem uma abordagem adaptativa e incremental para o desenvolvimento do produto, o que facilita a resposta rápida e eficaz às mudanças nos requisitos ou nas prioridades do projeto ao
+  longo do tempo.</li>
+</ul>
+<h2 id="metodologia">Metodologia</h2>
+<p>Para a criação deste documento, seguimos um processo estruturado para garantir a precisão e a relevância das funcionalidades desejadas. Primeiro, realizamos a elicitação dos requisitos funcionais e não funcionais. Com base nesses <a href="../../../elicitacao/requisitosElicitados/">requisitos elicitados</a>, elaboramos as histórias de usuário.</p>
+<p>Para validar as histórias de usuário, conduzimos duas entrevistas: uma com o Product Owner (PO) e outra com um usuário do aplicativo. Essas entrevistas foram essenciais para ajustar as histórias e confirmar que atendiam às necessidades reais dos usuários. Durante essas entrevistas, também realizamos a priorização das histórias, utilizando o método Three Level Scale para classificá-las em Alta, Média ou Baixa prioridade.</p>
+<p>Após a elaboração, estabelecemos critérios de aceitação claros para cada história. Os participantes da validação estão listados na Tabela 1, e a gravação da sessão de validação pode ser visualizada no Vídeo 1 com o PO e o Vídeo 2 com o Usuário. O modelo de card para as histórias de usuário está descrito na Tabela 2.</p>
+<p>Esse processo assegura que todas as funcionalidades são bem compreendidas, priorizadas corretamente e alinhadas com as expectativas dos stakeholders.
+<center></p>
+<p><strong>Tabela 1</strong> - Participantes da priorização e validação.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Participante</strong></th>
+<th style="text-align: left;"><strong>Função</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/vitorfleonardo">Vitor Feijó</a></td>
+<td style="text-align: left;">Product Owner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+<td style="text-align: left;">Desenvolvedor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a></td>
+<td style="text-align: left;">Desenvolvedor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/acamposs">Amanda Campos</a></td>
+<td style="text-align: left;">Desenvolvedor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://requisitos-de-software.github.io/2024.1-Meu-INSS/elicitacao/entrevista/">Maria Eliane</a></td>
+<td style="text-align: left;">Usuário</td>
+</tr>
+</tbody>
+</table>
+<p><em>Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>, <a href="https://github.com/vitorfleonardo">Vitor Feijó</a> e <a href="https://github.com/paulohborba">Paulo Borba</a>.</em></p>
+<p></center></p>
+<p><center></p>
+<p><strong>Vídeo 1</strong> - Priorização e validação com o PO.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AwjY2x_zZHo?si=bCntushlCMSIytt1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p><a href="https://www.youtube.com/embed/AwjY2x_zZHo?si=bCntushlCMSIytt1" target="blanket">Clique aqui</a></p>
+<p>Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>, <a href="https://github.com/vitorfleonardo">Vitor Feijó</a> e <a href="https://github.com/paulohborba">Paulo Borba</a>.</p>
+<p></center></p>
+<p><center></p>
+<p><strong>Vídeo 2</strong> - Priorização e validação com o Usuário.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AqyRRP2doHM?si=jj5I9jk44mqc87eE&amp;start=138" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p><a href="https://www.youtube.com/embed/AqyRRP2doHM?si=jj5I9jk44mqc87eE&amp;start=138" target="blanket">Clique aqui</a></p>
+<p>Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>,  <a href="https://github.com/acamposs">Amanda Campos</a>  e <a href="https://github.com/paulohborba">Paulo Borba</a>.</p>
+<p></center></p>
+<p><center></p>
+<p><font size="3">Tabela 2: Modelo de tabela para histórias de usuário.</font></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US</em>[Número de dentificação]</td>
+<td style="text-align: left;">Título</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> [tipo de usuário], <em>desejo</em> [ação desejada] <em>para</em> [objetivo]</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- [Critério 1] <br> - [Critério 2] <br></td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade</td>
+<td style="text-align: left;">Alta, Média ou Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta, Média ou Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta, Média ou Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Se a história foi Validada ou não pelo usuário</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;">Código do requisito referente a História de usuário</td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a> &amp; <a href="https://github.com/paulohborba">Paulo Borba</a>.</font></p>
+<p></center></p>
+<h2 id="historias-de-usuario">Histórias de Usuário</h2>
+<p>As tabelas 3 a 45 detalham as histórias de usuário elicitadas durante o processo de entrevista e análise. Cada história é representada por um identificador único no formato US[X], onde [X] corresponde ao número específico da história. Estas tabelas fornecem uma visão abrangente das necessidades e funcionalidades desejadas, descritas do ponto de vista do usuário. Além disso, cada história de usuário inclui critérios de aceitação claros, que definem as condições que devem ser atendidas para considerar a história como concluída. A prioridade de cada história, determinada pelo Product Owner, também está incluída para ajudar a guiar o processo de desenvolvimento.</p>
+<h3 id="us01-realizar-login-com-acesso-unificado-do-govbr">US01 - Realizar login com acesso unificado do GOV.br</h3>
+<p><center></p>
+<p><strong>Tabela 3 - História de Usuário Realizar login com acesso unificado do GOV.br.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US01</td>
+<td style="text-align: left;">Realizar login com acesso unificado do gov.br</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> realizar o login com o acesso unificado do gov.br <em>para</em> garantir uma autenticação segura e integrada com os serviços do governo.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve permitir login através do gov.br <br> - O sistema deve verificar as credenciais através do serviço gov.br <br> - Após o login, o usuário deve ser redirecionado para a página inicial do aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE01</a> &amp; <a href="../backlog/">Tema 1</a> &amp; <a href="../backlog/">Épico 1.1</a> &amp; <a href="../backlog/">US01</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>.</font></p>
+<p></center></p>
+<h3 id="us02-receber-termo-de-uso-no-primeiro-acesso">US02 - Receber termo de uso no primeiro acesso</h3>
+<p><center></p>
+<p><strong>Tabela 4 - História de Usuário Receber termo de uso no primeiro acesso.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US02</td>
+<td style="text-align: left;">Receber termo de uso no primeiro acesso</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> novo usuário do aplicativo, <em>desejo</em> receber um termo de uso em meu primeiro acesso <em>para</em> estar ciente das condições e políticas do uso do aplicativo.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- No primeiro login, o sistema deve exibir o termo de uso <br> - O usuário deve ter que aceitar o termo de uso para continuar <br> - O sistema deve registrar a aceitação do termo de uso pelo usuário</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE02</a> &amp; <a href="../backlog/">Tema 1</a> &amp; <a href="../backlog/">Épico 1.3</a> &amp; <a href="../backlog/">US02</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>.</font></p>
+<p></center></p>
+<h3 id="us03-acessar-documentos-legislativos">US03 - Acessar documentos legislativos</h3>
+<p><center></p>
+<p><strong>Tabela 5 - História de Usuário Acessar documentos legislativos.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US03</td>
+<td style="text-align: left;">Acessar documentos legislativos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário interessado em informações legislativas, <em>desejo</em> ter acesso a documentos legislativos <em>para</em> acompanhar e consultar a legislação vigente.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve exibir uma lista de documentos legislativos <br> - O usuário deve poder buscar e filtrar documentos legislativos <br> - O sistema deve permitir a visualização e download dos documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE03</a> &amp; <a href="../backlog/">Tema 3</a> &amp; <a href="../backlog/">Épico 3.1</a> &amp; <a href="../backlog/">US03</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>.</font></p>
+<p></center></p>
+<h3 id="us04-acessar-suporte-tecnico">US04 - Acessar suporte técnico</h3>
+<p><center></p>
+<p><strong>Tabela 6 - História de Usuário Acessar suporte técnico.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US04</td>
+<td style="text-align: left;">Acessar suporte técnico</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário com dificuldades técnicas, <em>desejo</em> acessar o suporte técnico diretamente pelo aplicativo ou por um número 0800 ou chat <em>para</em> resolver meus problemas rapidamente e continuar usando o serviço sem interrupções.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve oferecer uma opção de suporte técnico dentro do aplicativo <br> - O suporte técnico deve estar acessível via número 0800 e chat <br> - O sistema deve registrar as interações de suporte para acompanhamento</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE04</a> &amp; <a href="../backlog/">Tema 4</a> &amp; <a href="../backlog/">Épico 4.1</a> &amp; <a href="../backlog/">US04</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>.</font></p>
+<p></center></p>
+<h3 id="us05-acessar-tutoriais-de-uso">US05 - Acessar tutoriais de uso</h3>
+<p><center></p>
+<p><strong>Tabela 7 - História de Usuário Acessar tutoriais de uso.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US05</td>
+<td style="text-align: left;">Acessar tutoriais de uso</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário que deseja entender melhor o aplicativo, <em>desejo</em> acessar tutoriais de uso <em>para</em> maximizar as funcionalidades e recursos disponíveis.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve oferecer tutoriais de uso acessíveis na página inicial <br> - Os tutoriais devem cobrir as principais funcionalidades do aplicativo <br> - O sistema deve permitir feedback dos usuários sobre os tutoriais</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE05</a> &amp; <a href="../backlog/">Tema 4</a> &amp; <a href="../backlog/">Épico 4.1</a> &amp; <a href="../backlog/">US05</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>.</font></p>
+<p></center></p>
+<h3 id="us06-agendar-horario-em-uma-agencia">US06 - Agendar horário em uma agência</h3>
+<p><center></p>
+<p><strong>Tabela 8 - História de Usuário Agendar horário em uma agência.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US06</td>
+<td style="text-align: left;">Agendar horário em uma agência</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> agendar um horário em uma agência <em>para</em> resolver questões que necessitam de atendimento presencial de maneira organizada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve permitir o agendamento de horários em agências <br> - O sistema deve enviar uma confirmação do agendamento ao usuário <br> - O usuário deve poder cancelar ou reagendar o horário, se necessário</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE06</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.2</a> &amp; <a href="../backlog/">US06</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a>.</font></p>
+<p></center></p>
+<h3 id="us07-visualizar-detalhes-dos-beneficios">US07 - Visualizar detalhes dos benefícios</h3>
+<p><center></p>
+<p><strong>Tabela 9 - História de Usuário Visualizar detalhes dos benefícios.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US07</td>
+<td style="text-align: left;">Visualizar detalhes dos benefícios</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> beneficiário, <em>desejo</em>  visualizar todos os detalhes dos benefícios aos quais tenho direito <em>para</em> ter informações claras sobre valores, datas de pagamento, status e correções.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve exibir detalhes completos dos benefícios <br> - O usuário deve poder visualizar histórico de benefícios <br> - O sistema deve alertar o usuário sobre mudanças no status dos benefícios</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE07</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.1</a> &amp; <a href="../backlog/">US07</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>.</font></p>
+<p></center></p>
+<h3 id="us08-simular-tempo-de-contribuicao-e-aposentadoria">US08 - Simular tempo de contribuição e aposentadoria</h3>
+<p><center></p>
+<p><strong>Tabela 10 - História de Usuário Simular tempo de contribuição e aposentadoria.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US08</td>
+<td style="text-align: left;">Simular tempo de contribuição e aposentadoria</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> contribuinte, <em>desejo</em> acessar uma funcionalidade para simular o tempo de contribuição e estimar a aposentadoria <em>para</em> planejar melhor meu futuro financeiro.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve permitir a entrada de dados sobre o tempo de contribuição <br> - O sistema deve calcular e exibir uma estimativa de aposentadoria com base nos dados fornecidos <br> - O usuário deve poder ajustar os dados e ver como isso impacta na estimativa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE08</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.1</a> &amp; <a href="../backlog/">US08</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>.</font></p>
+<p></center></p>
+<h3 id="us09-checar-extrato-da-aposentadoria">US09 - Checar extrato da aposentadoria</h3>
+<p><center></p>
+<p><strong>Tabela 11 - História de Usuário Checar extrato da aposentadoria.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US09</td>
+<td style="text-align: left;">Checar extrato da aposentadoria</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> aposentado, <em>desejo</em> checar o extrato de crédito da minha aposentadoria mensal <em>para</em> acompanhar meus recebimentos de maneira detalhada.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve exibir o extrato mensal da aposentadoria <br> - O usuário deve poder ver detalhes sobre cada pagamento <br> - O sistema deve permitir a exportação do extrato para outros formatos, como PDF</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE09</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.1</a> &amp; <a href="../backlog/">US09</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>.</font></p>
+<p></center></p>
+<h3 id="us10-acessar-extrato-anual-de-imposto-de-renda">US10 - Acessar extrato anual de imposto de renda</h3>
+<p><center></p>
+<p><strong>Tabela 12 - História de Usuário Acessar extrato anual de imposto de renda.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US10</td>
+<td style="text-align: left;">Acessar extrato anual de imposto de renda</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> contribuinte, <em>desejo</em> acessar um extrato anual de imposto de renda <em>para</em> preencher corretamente minha declaração anual de imposto.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve exibir o extrato anual de imposto de renda <br> - O usuário deve poder visualizar detalhes de cada item do extrato <br> - O sistema deve permitir a exportação do extrato para formatos como PDF</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE10</a> &amp; <a href="../backlog/">Tema 3</a> &amp; <a href="../backlog/">Épico 3.1</a> &amp; <a href="../backlog/">US10</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>.</font></p>
+<p></center></p>
+<h3 id="us11-acessar-extrato-anual-de-emprestimo">US11 - Acessar extrato anual de empréstimo</h3>
+<p><center></p>
+<p><strong>Tabela 13 - História de Usuário Acessar extrato anual de empréstimo.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US11</td>
+<td style="text-align: left;">Acessar extrato anual de empréstimo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário com empréstimos, <em>desejo</em> acessar um extrato anual de empréstimo <em>para</em> controlar e verificar meus empréstimos anuais.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve exibir o extrato anual de empréstimos <br> - O usuário deve poder ver detalhes de cada item do extrato <br> - O sistema deve permitir a exportação do extrato para formatos como PDF</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE11</a> &amp; <a href="../backlog/">Tema 3</a> &amp; <a href="../backlog/">Épico 3.1</a> &amp; <a href="../backlog/">US11</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>.</font></p>
+<p></center></p>
+<h3 id="us12-autenticacao-biometrica">US12 - Autenticação biométrica</h3>
+<p><center></p>
+<p><strong>Tabela 14 - História de Usuário Autenticação biométrica.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US12</td>
+<td style="text-align: left;">Autenticação biométrica</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> acessar o aplicativo utilizando autenticação biométrica como impressão digital <em>para</em> ter um acesso seguro e rápido.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve suportar autenticação biométrica, como impressão digital <br> - O usuário deve poder configurar a autenticação biométrica nas configurações do aplicativo <br> - O sistema deve garantir que a autenticação biométrica seja segura e confiável</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE12</a> &amp; <a href="../backlog/">Tema 1</a> &amp; <a href="../backlog/">Épico 1.1</a> &amp; <a href="../backlog/">US12</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/GabrielMS00">Gabriel Souza</a>.</font></p>
+<p></center></p>
+<h3 id="us13-acesso-e-visualizacao-do-cadastro-nacional-de-informacoes-sociais-cnis">US13 - Acesso e visualização do Cadastro Nacional de Informações Sociais (CNIS)</h3>
+<p><center></p>
+<p><strong>Tabela 15 - História de Usuário Acesso CNIS.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US13</td>
+<td style="text-align: left;">Acesso e visualização do Cadastro Nacional de Informações Sociais (CNIS)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> ter total acesso ao CNIS através do próprio sistema <em>para</em> poder visualizar o meu histórico de contribuições da Previdência Social.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve oferecer a opção de acesso ao CNIS através de um link no menu principal <br> - O documento gerado deve apresentar todos os vínculos, remunerações e contribuições previdenciárias <br></td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE13</a> &amp; <a href="../backlog/">Tema 3</a> &amp; <a href="../backlog/">Épico 3.1</a> &amp; <a href="../backlog/">US13</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JoseFilipi">José Filipi</a>.</font></p>
+<p></center></p>
+<h3 id="us14-acesso-a-area-de-ferramentas-dos-beneficios-dos-segurados">US14 - Acesso à área de ferramentas dos benefícios dos segurados</h3>
+<p><center></p>
+<p><strong>Tabela 16 - História de Usuário Acesso a ferramentas de benefícios dos segurados.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US14</td>
+<td style="text-align: left;">Acesso a ferramentas de benefícios dos segurados.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> ter acesso a uma área dentro do sistema com ferramentas voltadas aos benefícios, como um recurso de pesquisa <em>para</em> poder rastrear e acompanhar o andamento dos meus benefícios.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve oferecer uma página com ferramentas voltadas exclusivamente para os benefícios <br> - A área de ferramenta dos benefícios deve permitir fazer buscas e realizar filtros <br> - Deve haver uma descrição detalhada sobre a origem de cada benefício</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE14</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.1</a> &amp; <a href="../backlog/">US14</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JoseFilipi">José Filipi</a>.</font></p>
+<p></center></p>
+<h3 id="us15-requerimento-de-beneficios-e-atualizacao-do-vinculo-do-cnis">US15 - Requerimento de benefícios e atualização do vínculo do CNIS</h3>
+<p><center></p>
+<p><strong>Tabela 17 - História de Usuário Requerimento de benefícios e atualização do vínculo do CNIS.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US15</td>
+<td style="text-align: left;">Requerimento de benefícios e atualização do vínculo do CNIS</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> poder realizar o requerimento de um benefício <em>para</em> poder ter acesso aos recursos na qual tenho direito.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve ofertar uma área para realizar o requerimento de benefícios <br> - A área deve permitir realizar também a atualização do vínculo CNIS <br> - Benefícios de quaisquer natureza devem poder sofrer o requerimento</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE15</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.2</a> &amp; <a href="../backlog/">US15</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JoseFilipi">José Filipi</a>.</font></p>
+<p></center></p>
+<h3 id="us16-fornecimento-de-informacoes-referentes-a-pagamentos-nao-recebidos">US16 - Fornecimento de informações referentes a pagamentos não recebidos</h3>
+<p><center></p>
+<p><strong>Tabela 18 - História de Usuário Fornecimento de informações referentes a pagamentos não recebidos.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US16</td>
+<td style="text-align: left;">Fornecimento de informações referentes a pagamentos não recebidos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> ter acesso a uma área que me mostre as informações referentes aos pagamentos não recebidos devido erros e descontos indevidos, <em>para</em> que eu possa acompanhar o status dos meus benefícios e saber o motivo do seu bloqueio.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve ofercer uma área dedicada a mostrar as informações dos pagamentos não efetivados <br> - Deve haver uma descrição a respeito de cada pagamento não realizado e seus motivadores</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE16</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.2</a> &amp; <a href="../backlog/">US16</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JoseFilipi">José Filipi</a>.</font></p>
+<p></center></p>
+<h3 id="us17-atualizacao-de-dados-pessoais">US17 - Atualização de dados pessoais</h3>
+<p><center></p>
+<p><strong>Tabela 19 - História de Usuário Atualização de dados pessoais.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US17</td>
+<td style="text-align: left;">Atualização de dados pessoais</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> poder atualizar meus dados pessoais sempre que desejar, <em>para</em> que eu possa manter meu status e minhas informações pessoais sempre atualizadas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve oferecer de forma clara uma opção de atualização dos dados cadastrais pessoais no menu princiapl do sistema <br> - O sistema deve me permitir alterar meus dados pessoais sempre que eu desejar, sem haver limitações desnecessárias</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE17</a> &amp; <a href="../backlog/">Tema 1</a> &amp; <a href="../backlog/">Épico 1.2</a> &amp; <a href="../backlog/">US17</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JoseFilipi">José Filipi</a>.</font></p>
+<p></center></p>
+<h3 id="us18-alerta-sobre-emprestimos-indevidos">US18 - Alerta sobre empréstimos indevidos</h3>
+<p><center></p>
+<p><strong>Tabela 20 - História de Usuário Alertas sobre empréstimos indevidos.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US18</td>
+<td style="text-align: left;">Alertas caso haja empréstimos indevidos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> receber alertas no dispositivo por meio do sistema caso haja empréstimos indevidos, <em>para</em> que eu possa me manter atualizado sobre os empréstimos solicitados.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve enviar alertas ao dispositivo sempre que houver empréstimos indevidos <br> - Os alertas devem especificar o empréstimo que se configura como indevido <br> - Os alertas devem ser enviados imediatamente após o empréstimo ser configurado como indevido</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE18</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.1</a> &amp; <a href="../backlog/">US18</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JoseFilipi">José Filipi</a>.</font></p>
+<p></center></p>
+<h3 id="us19-bloquear-emprestimos">US19 - Bloquear empréstimos</h3>
+<p><center></p>
+<p><strong>Tabela 21 - História de Usuário Bloqueio de empréstimos.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US19</td>
+<td style="text-align: left;">Exibir a opção de bloquear o empréstimo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> ter a opção de bloquear meus empréstimos solicitados, <em>para</em> que eu possa cancelar uma decisão de empréstimo se assim for da minha vontade.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve, em uma área própria de empréstimos, exibir uma opção para cada empréstimo solicitado oferecendo a opção de realizar o bloqueio dele <br> - A opção de bloqueio deve ficar visível logo após a solicitação do empréstimo <br> - A opção de bloqueio de empréstimo deve ser de fácil identificação dentro do sistema</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE19</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.1</a> &amp; <a href="../backlog/">US19</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>.</font></p>
+<p></center></p>
+<h3 id="us20-acesso-ao-sistema-mediante-cpf-e-senha">US20 - Acesso ao sistema mediante CPF e senha</h3>
+<p><center></p>
+<p><strong>Tabela 22 - História de Usuário Acesso ao sistema mediante CPF e senha.</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US20</td>
+<td style="text-align: left;">Oferecer a opção de ingresso ao sistema mediante CPF e senha</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> ter a opção de me logar ao sistema por meio do meu CPF e minha senha, <em>para</em> que eu possa ter uma maior variedade de opções ao me logar no sistema.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- Na área de login, deve existir uma opção de cadastro no sistema por meio do CPF e de uma senha que será criada no momento do cadastro <br> - A opção de cadastro mediante CPF e senha deve ser de fácil identificação na área de login, garantido que todos possam ver as opções de logine  escolher a que melhor lhe agrada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE20</a> &amp; <a href="../backlog/">Tema 1</a> &amp; <a href="../backlog/">Épico 1.1</a> &amp; <a href="../backlog/">US20</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>.</font>
+</center></p>
+<h3 id="us211-agendar-pericias-medicas">US21.1 - Agendar Perícias Médicas</h3>
+<p><center></p>
+<p><strong>Tabela 23 - História de Usuário Agendar Perícias Médicas</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US21.1</em></td>
+<td style="text-align: left;">Agendar Perícias Médicas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> agendar perícias médicas <em>para</em> gerir minhas consultas de forma conveniente</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O usuário deve poder selecionar uma data e hora disponíveis para agendar uma perícia médica</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE21</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.2</a> &amp; <a href="../backlog/">US21.1</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>.</font>
+</center></p>
+<h3 id="us212-reagendar-pericias-medicas">US21.2 - Reagendar Perícias Médicas</h3>
+<p><center></p>
+<p><strong>Tabela 24 - História de Usuário Reagendar Perícias Médicas</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US21.2</em></td>
+<td style="text-align: left;">Reagendar Perícias Médicas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> reagendar perícias médicas <em>para</em> ajustar minhas consultas conforme necessário</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O usuário deve poder reagendar uma perícia médica já agendada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE21</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.2</a> &amp; <a href="../backlog/">US21.2</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>.</font>
+</center></p>
+<hr />
+<h3 id="us213-cancelar-pericias-medicas">US21.3 - Cancelar Perícias Médicas</h3>
+<p><center></p>
+<p><strong>Tabela 25 - História de Usuário Cancelar Perícias Médicas</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US21.3</em></td>
+<td style="text-align: left;">Cancelar Perícias Médicas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> cancelar perícias médicas <em>para</em> gerenciar meus compromissos de forma flexível</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O usuário deve poder cancelar uma perícia médica já agendada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE21</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.2</a> &amp; <a href="../backlog/">US21.3</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>.</font>
+</center></p>
+<h3 id="us22-enviar-documentos-necessarios-para-beneficios">US22 - Enviar Documentos Necessários para Benefícios</h3>
+<p><center></p>
+<p><strong>Tabela 26 - História de Usuário Enviar Documentos Necessários para Benefícios</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US22</em></td>
+<td style="text-align: left;">Enviar Documentos Necessários para Benefícios</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> enviar documentos necessários <em>para</em> o processo de requerimento ou manutenção de benefícios</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O usuário deve poder anexar documentos em vários formatos (PDF, JPG, PNG) <br> - O sistema deve confirmar o recebimento dos documentos enviados</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE22</a> &amp; <a href="../backlog/">Tema 3</a> &amp; <a href="../backlog/">Épico 3.2</a> &amp; <a href="../backlog/">US22</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/acamposs">Amanda Campos</a>.</font>
+</center></p>
+<h3 id="us23-recuperacao-de-senha">US23 - Recuperação de Senha</h3>
+<p><center></p>
+<p><strong>Tabela 27 - História de Usuário Recuperação de Senha</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US23</em></td>
+<td style="text-align: left;">Recuperação de Senha</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do sistema, <em>desejo</em> recuperar minha senha <em>para</em> poder acessar minha conta se eu esquecê-la</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O usuário deve poder solicitar a recuperação de senha via email <br> - O usuário deve receber um link ou código para redefinir a senha</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE23</a> &amp; <a href="../backlog/">Tema 1</a> &amp; <a href="../backlog/">Épico 1.2</a> &amp; <a href="../backlog/">US23</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>.</font>
+</center></p>
+<h3 id="us24-solicitar-auxilio-acidente">US24 - Solicitar Auxílio-Acidente</h3>
+<p><center></p>
+<p><strong>Tabela 28 - História de Usuário Solicitar Auxílio-Acidente</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US24</em></td>
+<td style="text-align: left;">Solicitar Auxílio-Acidente</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> solicitar auxílio-acidente <em>para</em> receber suporte financeiro devido a um acidente</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O usuário deve poder preencher um formulário específico para auxílio-acidente <br> - O sistema deve confirmar o recebimento da solicitação</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE24</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.1</a> &amp; <a href="../backlog/">US24</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>.</font>
+</center></p>
+<h3 id="us25-formulario-de-auxilio-acidente">US25 - Formulário de Auxílio-Acidente</h3>
+<p><center></p>
+<p><strong>Tabela 29 - História de Usuário Preencher Formulário de Auxílio-Acidente</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US25</em></td>
+<td style="text-align: left;">Preencher Formulário de Auxílio-Acidente</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> preencher um formulário de auxílio-acidente <em>para</em> descrever o acidente e anexar documentos médicos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O formulário deve incluir campos para descrição do acidente, data do acidente, e anexos de documentos médicos <br> - O sistema deve validar os campos obrigatórios antes do envio</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE25</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.1</a> &amp; <a href="../backlog/">US25</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>.</font>
+</center></p>
+<h3 id="us26-acesso-de-advogado-aos-processos-dos-clientes">US26 - Acesso de Advogado aos Processos dos Clientes</h3>
+<p><center></p>
+<p><strong>Tabela 30 - História de Usuário Acesso de Advogado aos Processos dos Clientes</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US21</td>
+<td style="text-align: left;">Acesso de Advogado aos Processos dos Clientes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> advogado, <em>desejo</em> acessar os processos dos meus clientes com a autorização deles <em>para</em> poder acompanhar e gerenciar os casos.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve permitir que advogados acessem processos com a autorização dos clientes <br> - O sistema deve verificar e registrar a autorização do Usuário<br> - O advogado deve poder visualizar, baixar e imprimir os documentos do processo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE26</a> &amp; <a href="../backlog/">Tema 3</a> &amp; <a href="../backlog/">Épico 3.2</a> &amp; <a href="../backlog/">US26</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>.</font></p>
+<p></center></p>
+<h3 id="us27-solicitar-e-fornecer-documentos-pelo-advogado">US27 - Solicitar e Fornecer Documentos pelo Advogado</h3>
+<p><center></p>
+<p><strong>Tabela 31 - História de Usuário Solicitar e Fornecer Documentos pelo Advogado</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">US22</td>
+<td style="text-align: left;">Solicitar e Fornecer Documentos pelo Advogado</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> advogado, <em>desejo</em> solicitar e fornecer documentos necessários ao processo diretamente ao sistema <em>para</em> agilizar a tramitação dos processos dos meus clientes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve permitir que advogados solicitem documentos necessários ao processo <br> - O sistema deve permitir que advogados forneçam documentos diretamente ao processo <br> - O sistema deve notificar os clientes sobre solicitações de documentos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE27</a> &amp; <a href="../backlog/">Tema 3</a> &amp; <a href="../backlog/">Épico 3.2</a> &amp; <a href="../backlog/">US27</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>.</font></p>
+<p></center></p>
+<h3 id="us28-facilidade-de-uso-e-intuitividade-do-aplicativo">US28 - Facilidade de Uso e Intuitividade do Aplicativo</h3>
+<p><center></p>
+<p><strong>Tabela 32 - História de Usuário Facilidade de Uso e Intuitividade do Aplicativo</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US28</em></td>
+<td style="text-align: left;">Facilidade de Uso e Intuitividade do Aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo seja fácil de usar e intuitivo, mesmo para usuários com conhecimento técnico limitado, e que minimize o número de cliques para realizar uma tarefa <em>para</em> facilitar a utilização e agilizar o processo de interação</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve apresentar uma interface intuitiva, com navegação simples e clara <br> - O número de cliques necessários para realizar uma tarefa deve ser minimizado, priorizando a eficiência e agilidade</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE28</a> &amp; <a href="../backlog/">Tema 5</a> &amp; <a href="../backlog/">Épico 5</a> &amp; <a href="../backlog/">US28</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/JohnnyLopess">Johnny Lopes</a>.</font></p>
+<p></center></p>
+<h3 id="us29-compatibilidade-com-diferentes-sistemas-operacionais">US29 - Compatibilidade com Diferentes Sistemas Operacionais</h3>
+<p><center></p>
+<p><strong>Tabela 33 - História de Usuário Compatibilidade com Diferentes Sistemas Operacionais</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US29</em></td>
+<td style="text-align: left;">Compatibilidade com Diferentes Sistemas Operacionais</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo seja compatível com as versões mais recentes e anteriores dos sistemas operacionais iOS, Android e computador <em>para</em> garantir que eu possa acessar o aplicativo em qualquer dispositivo que eu utilize</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve funcionar corretamente nas versões mais recentes e anteriores dos sistemas operacionais iOS, Android e computador <br> - Todos os recursos do aplicativo devem estar disponíveis em todas as plataformas suportadas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE39</a> &amp; <a href="../backlog/">Tema 5</a> &amp; <a href="../backlog/">Épico 5</a> &amp; <a href="../backlog/">US29</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>.</font></p>
+<p></center></p>
+<h3 id="us30-notificacao-de-atualizacoes-importantes">US30 - Notificação de Atualizações Importantes</h3>
+<p><center></p>
+<p><strong>Tabela 34 - História de Usuário Notificação de Atualizações Importantes</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US30</em></td>
+<td style="text-align: left;">Notificação de Atualizações Importantes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> receber notificações sobre atualizações importantes em minhas solicitações e agendamentos via notificações no aplicativo ou por email <em>para</em> ficar atualizado sobre qualquer mudança ou informação relevante</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve enviar notificações sobre atualizações importantes relacionadas às solicitações e agendamentos do usuário <br> - O usuário deve poder optar por receber notificações por email ou no aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE30</a> &amp; <a href="../backlog/">Tema 4</a> &amp; <a href="../backlog/">Épico 4.2</a> &amp; <a href="../backlog/">US30</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>.</font></p>
+<p></center></p>
+<h3 id="us31-criacao-de-fila-digital-para-agendamentos">US31 - Criação de Fila Digital para Agendamentos</h3>
+<p><center></p>
+<p><strong>Tabela 35 - História de Usuário Criação de uma fila digital (sistema de espera online) para agendamentos</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US31</em></td>
+<td style="text-align: left;">Criação de uma fila digital (sistema de espera online) para agendamentos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo crie uma fila digital referente aos agendamentos <em>para</em> organizar e otimizar o processo de marcação de consultas e serviços</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve gerenciar uma fila digital de agendamentos, organizando-os por ordem de chegada <br> - Os usuários devem ser notificados quando sua vez na fila chegar</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE31</a> &amp; <a href="../backlog/">Tema 2</a> &amp; <a href="../backlog/">Épico 2.2</a> &amp; <a href="../backlog/">US31</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>.</font></p>
+<p></center></p>
+<h3 id="us32-ferramentas-de-acessibilidade">US32 - Ferramentas de Acessibilidade</h3>
+<p><center></p>
+<p><strong>Tabela 36 - História de Usuário Ferramentas de Acessibilidade</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US32</em></td>
+<td style="text-align: left;">Ferramentas de Acessibilidade</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo possua ferramentas de acessibilidade como navegação guiada, alto contraste, comando por voz e possibilidade de aumentar a fonte <em>para</em> garantir que todas as pessoas, independentemente de suas habilidades ou necessidades, possam utilizar o aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve oferecer opções de navegação guiada para facilitar a interação para usuários com deficiência visual <br> - Deve ser possível alterar para um modo de alto contraste para usuários com dificuldades de visão</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE32</a> &amp; <a href="../backlog/">Tema 5</a> &amp; <a href="../backlog/">Épico 5</a> &amp; <a href="../backlog/">US32</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>.</font></p>
+<p></center></p>
+<h3 id="us33-integracao-com-outros-servicos-do-governo">US33 - Integração com Outros Serviços do Governo</h3>
+<p><center></p>
+<p><strong>Tabela 37 - História de Usuário Integração com Outros Serviços do Governo</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US33</em></td>
+<td style="text-align: left;">Integração com Outros Serviços do Governo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo tenha integração com outros serviços do governo <em>para</em> facilitar o acesso e a utilização de diferentes serviços públicos em um único local</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve permitir acesso direto a outros serviços do governo, como consulta de informações fiscais e previdenciárias <br> - Deve ser possível realizar transações entre diferentes serviços sem a necessidade de sair do aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE33</a> &amp; <a href="../backlog/">Tema 6</a> &amp; <a href="../backlog/">Épico 6</a> &amp; <a href="../backlog/">US33</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>.</font></p>
+<p></center></p>
+<h3 id="us34-acesso-para-profissionais-do-legislativo">US34 - Acesso para Profissionais do Legislativo</h3>
+<p><center></p>
+<p><strong>Tabela 38 - História de Usuário Acesso para Profissionais do Legislativo</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US34</em></td>
+<td style="text-align: left;">Acesso para Profissionais do Legislativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo permita outras formas de acesso, como para profissionais do legislativo, para o acompanhamento facilitado de documentos e processos <em>para</em> garantir que todas as partes interessadas tenham acesso às informações relevantes</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve oferecer acesso exclusivo para profissionais do legislativo, com permissões específicas para visualização e edição de documentos <br> - Deve ser possível acompanhar o andamento de processos legislativos de forma organizada e intuitiva</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE34</a> &amp; <a href="../backlog/">Tema 3</a> &amp; <a href="../backlog/">Épico 3.2</a> &amp; <a href="../backlog/">US34</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/vitorfleonardo">Vitor Feijó</a>.</font></p>
+<p></center></p>
+<h3 id="us35-suporte-em-varios-idiomas">US35 - Suporte em Vários Idiomas</h3>
+<p><center></p>
+<p><strong>Tabela 39 - História de Usuário Suporte em Vários Idiomas</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US35</em></td>
+<td style="text-align: left;">Suporte em Vários Idiomas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo ofereça suporte em vários idiomas, especialmente português <em>para</em> facilitar a utilização por usuários de diferentes nacionalidades e idiomas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve disponibilizar a opção de seleção de idioma na interface de usuário <br> - Todas as funcionalidades do aplicativo devem ser totalmente traduzidas para os idiomas suportados</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Baixa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE35</a> &amp; <a href="../backlog/">Tema 5</a> &amp; <a href="../backlog/">Épico 5</a> &amp; <a href="../backlog/">US35</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>.</font></p>
+<p></center></p>
+<h3 id="us36-escalabilidade-nacional-do-sistema">US36 - Escalabilidade Nacional do Sistema</h3>
+<p><center></p>
+<p><strong>Tabela 40 - História de Usuário Escalabilidade Nacional do Sistema</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US36</em></td>
+<td style="text-align: left;">Escalabilidade Nacional do Sistema</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o sistema seja capaz de lidar com um grande número de processos e distribuí-los nacionalmente <em>para</em> garantir que o sistema seja escalável e possa atender às demandas de todos os usuários em diferentes regiões do país</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O sistema deve ser capaz de processar e armazenar um grande volume de dados de forma eficiente <br> - Deve ser possível distribuir os processos e dados de forma equitativa entre diferentes servidores e regiões</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE36</a> &amp; <a href="../backlog/">Tema 6</a> &amp; <a href="../backlog/">Épico 6</a> &amp; <a href="../backlog/">US36</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>.</font></p>
+<p></center></p>
+<h3 id="us37-eficiencia-nas-tarefas-do-aplicativo">US37 - Eficiência nas Tarefas do Aplicativo</h3>
+<p><center></p>
+<p><strong>Tabela 41 - História de Usuário Eficiência nas Tarefas do Aplicativo</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US37</em></td>
+<td style="text-align: left;">Eficiência nas Tarefas do Aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo seja eficiente, permitindo que eu realize tarefas rápidas em 1-5 minutos e tarefas mais complexas em até 1h20 <em>para</em> otimizar meu tempo e tornar o uso do aplicativo mais produtivo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- As tarefas comuns do aplicativo devem ser realizadas em um intervalo de tempo entre 1 e 5 minutos <br> - Tarefas mais complexas, como preenchimento de formulários extensos, devem ser concluídas em até 1 hora e 20 minutos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE37</a> &amp; <a href="../backlog/">Tema 6</a> &amp; <a href="../backlog/">Épico 6</a> &amp; <a href="../backlog/">US37</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor:<a href="https://github.com/paulohborba">Paulo Borba</a>.</font></p>
+<p></center></p>
+<h3 id="us38-compatibilidade-com-tecnologias-assistivas">US38 - Compatibilidade com Tecnologias Assistivas</h3>
+<p><center></p>
+<p><strong>Tabela 42 - História de Usuário Compatibilidade com Tecnologias Assistivas</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US38</em></td>
+<td style="text-align: left;">Compatibilidade com Tecnologias Assistivas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo seja compatível com tecnologias assistivas, como teclados virtuais, controle por voz e dispositivos de entrada alternativos <em>para</em> garantir que pessoas com deficiências físicas possam utilizar o aplicativo de forma acessível</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve ser totalmente operável através de teclados virtuais e controles por voz <br> - Deve ser possível navegar por todas as funcionalidades do aplicativo utilizando dispositivos de entrada alternativos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE38</a> &amp; <a href="../backlog/">Tema 5</a> &amp; <a href="../backlog/">Épico 5</a> &amp; <a href="../backlog/">US38</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>.</font></p>
+<p></center></p>
+<h3 id="us39-garantia-de-seguranca-das-informacoes-pessoais">US39 - Garantia de Segurança das Informações Pessoais</h3>
+<p><center></p>
+<p><strong>Tabela 43 - História de Usuário Garantia de Segurança das Informações Pessoais</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US39</em></td>
+<td style="text-align: left;">Garantia de Segurança das Informações Pessoais</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo garanta a segurança das minhas informações pessoais através de criptografia de dados e autenticação robusta <em>para</em> proteger minha privacidade e confidencialidade</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- Todas as informações pessoais dos usuários devem ser criptografadas durante a transmissão e armazenamento <br> - Deve ser implementada uma autenticação robusta, como autenticação de dois fatores, para garantir o acesso seguro às contas dos usuários</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE39</a> &amp; <a href="../backlog/">Tema 1</a> &amp; <a href="../backlog/">Épico 1.2</a> &amp; <a href="../backlog/">US39</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>.</font></p>
+<p></center></p>
+<h3 id="us40-tempo-de-resposta-do-aplicativo">US40 - Tempo de Resposta do Aplicativo</h3>
+<p><center></p>
+<p><strong>Tabela 44 - História de Usuário Tempo de Resposta do Aplicativo</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US40</em></td>
+<td style="text-align: left;">Tempo de Resposta do Aplicativo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo responda a comandos em menos de 3 segundos <em>para</em> garantir uma experiência de uso rápida e eficiente</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- Todas as interações do usuário com o aplicativo, incluindo cliques e entrada de dados, devem ser respondidas em menos de 3 segundos <br> - O tempo de resposta do aplicativo deve ser consistente em diferentes dispositivos e condições de rede</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE40</a> &amp; <a href="../backlog/">Tema 6</a> &amp; <a href="../backlog/">Épico 6</a> &amp; <a href="../backlog/">US40</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>.</font></p>
+<p></center></p>
+<h3 id="us41-disponibilidade-do-aplicativo-247">US41 - Disponibilidade do Aplicativo 24/7</h3>
+<p><center></p>
+<p><strong>Tabela 45 - História de Usuário Disponibilidade do Aplicativo 24/7</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>ID</strong></th>
+<th style="text-align: left;"><strong>Nome</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><em>US41</em></td>
+<td style="text-align: left;">Disponibilidade do Aplicativo 24/7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Descrição</td>
+<td style="text-align: left;"><em>Eu, como</em> usuário do aplicativo, <em>desejo</em> que o aplicativo esteja disponível 24 horas por dia, 7 dias por semana, com uma taxa de uptime de 99.9% <em>para</em> garantir que eu possa acessar o aplicativo sempre que precisar, sem interrupções</td>
+</tr>
+<tr>
+<td style="text-align: left;">Critérios de Aceitação</td>
+<td style="text-align: left;">- O aplicativo deve estar disponível para acesso a qualquer momento, sem restrições de horário <br> - A taxa de uptime do aplicativo deve ser monitorada e mantida em 99.9% ou superior</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do PO</td>
+<td style="text-align: left;">Média</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prioridade do Usuário</td>
+<td style="text-align: left;">Alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">Validada</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rastreabilidade</td>
+<td style="text-align: left;"><a href="../../../elicitacao/requisitosElicitados/">RE41</a> &amp; <a href="../backlog/">Tema 6</a> &amp; <a href="../backlog/">Épico 6</a> &amp; <a href="../backlog/">US41</a></td>
+</tr>
+</tbody>
+</table>
+<p><font size="3">Autor: <a href="https://github.com/paulohborba">Paulo Borba</a>.</font></p>
+<p></center></p>
+<h2 id="bibliografia">Bibliografia</h2>
+<blockquote>
+<p>SERRANO, Milene. Requisitos - Aula 15. Local: UnB-FGA, Gama, DF. Apresentação de Power Point. 35, color. Disponível em: <a href="https://aprender3.unb.br/pluginfile.php/2845040/mod_resource/content/1/Requisitos%20-%20Aula%2015a.pdf">Requisitos - Aula 15</a>. Acesso em: 25 de Maio de 2024.
+</p>
+<p></a> Requisitos de Software. Mei (2022.2). Disponível em: <a href="https://requisitos-de-software.github.io/2022.2-MEI/Modelagem/UserCases/">https://requisitos-de-software.github.io/2022.2-MEI/Modelagem/UserCases/</a>. Acesso em: 25 mai. 2024.</p>
+<p></a> Requisitos de Software. Bilheteria DIgital (2023.1). Disponível em: <a href="https://requisitos-de-software.github.io/2023.1-BilheteriaDigital/modelagem/agil/historia-de-usuario/">https://requisitos-de-software.github.io/2023.1-BilheteriaDigital/modelagem/agil/historia-de-usuario/</a>. Acesso em: 25 mai. 2024.</p>
+</blockquote>
+<h2 id="historico-de-versoes">Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th style="text-align: center;">Data</th>
+<th style="text-align: center;">Descrição</th>
+<th style="text-align: center;">Autor(es)</th>
+<th style="text-align: center;">Data de revisão</th>
+<th style="text-align: center;">Revisor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>1.0</code></td>
+<td style="text-align: center;">25/05/2024</td>
+<td style="text-align: center;">Criação do documento.</td>
+<td style="text-align: center;"><a href="https://github.com/GabrielMS00">Gabriel Souza</a></td>
+<td style="text-align: center;">25/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.1</code></td>
+<td style="text-align: center;">25/05/2024</td>
+<td style="text-align: center;">Adição de histórias do usuário.</td>
+<td style="text-align: center;"><a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a></td>
+<td style="text-align: center;">26/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/GabrielMS00">Gabriel Souza</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.2</code></td>
+<td style="text-align: center;">26/05/2024</td>
+<td style="text-align: center;">Adição de histórias do usuário.</td>
+<td style="text-align: center;"><a href="https://github.com/GabrielMS00">Gabriel Souza</a></td>
+<td style="text-align: center;">26/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/JoseFilipi">José Filipi</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.3</code></td>
+<td style="text-align: center;">26/05/2024</td>
+<td style="text-align: center;">Adição de histórias do usuário.</td>
+<td style="text-align: center;"><a href="https://github.com/JoseFilipi">José Filipi</a></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/acamposs">Amanda Campos</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.4</code></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;">Adição de histórias do usuário.</td>
+<td style="text-align: center;"><a href="https://github.com/acamposs">Amanda Campos</a></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/JohnnyLopess">Johnny Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.5</code></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;">Adição de histórias do usuário.</td>
+<td style="text-align: center;"><a href="https://github.com/JohnnyLopess">Johnny Lopes</a></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/vitorfleonardo">Vitor Feijó</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.6</code></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;">Adição de histórias do usuário.</td>
+<td style="text-align: center;"><a href="https://github.com/vitorfleonardo">Vitor Feijó</a></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.7</code></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;">Adição de histórias do usuário.</td>
+<td style="text-align: center;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/GabrielMS00">Gabriel Souza</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.8</code></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;">Adição da validação e priorização.</td>
+<td style="text-align: center;"><a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.9</code></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;">Adição da validação e priorização.</td>
+<td style="text-align: center;"><a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a></td>
+<td style="text-align: center;">27/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>2.0</code></td>
+<td style="text-align: center;">28/05/2024</td>
+<td style="text-align: center;">Ajustes na página.</td>
+<td style="text-align: center;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+<td style="text-align: center;">28/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/JohnnyLopess">Johnny Lopes</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>2.1</code></td>
+<td style="text-align: center;">28/05/2024</td>
+<td style="text-align: center;">Ajustes na página.</td>
+<td style="text-align: center;"><a href="https://github.com/JohnnyLopess">Johnny Lopes</a></td>
+<td style="text-align: center;">28/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/paulohborba">Paulo Borba</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>2.2</code></td>
+<td style="text-align: center;">30/05/2024</td>
+<td style="text-align: center;">Adição da validação e priorização do cliente e ajustes.</td>
+<td style="text-align: center;"><a href="https://github.com/BiancaPatrocinio7">Bianca Castro</a></td>
+<td style="text-align: center;">30/05/2024</td>
+<td style="text-align: center;"><a href="https://github.com/acamposs">Amanda Campos</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
